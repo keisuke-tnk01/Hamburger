@@ -1,0 +1,61 @@
+header {
+    width               : 375px;
+    height              : 217px;
+    background-color    : #FFF7EF;      
+    color               : #707070;
+    font-family         : Roboto;
+
+    & .menu {
+        float: right;
+        font-size       : 1.25rem;
+        margin: 14px 16px 0px 0px;
+        margin-right: 16px;
+    }
+
+    & h1 {
+        font-size       : 2.5rem;
+        padding: 40px 0px 0px 86px;
+    }
+
+    & form {
+        line-height: 120px;
+        left: 24px;
+        height: 2.875rem;
+        display: flex;
+    }
+
+    & .searchtext {
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+        text-decoration: inherit;
+        /*display: inline-block;*/
+        padding: 0.6875rem 1rem;
+
+        /*font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;*/
+
+        border-radius: 8px;
+        height: 2.875rem;
+        width: 14.375rem;
+        margin: 0rem 0.75rem 0rem 1.5rem;
+        border: 1px solid #707070;
+        background-color: #fff;
+
+    }
+
+    & label {
+        height: 2.875rem;
+        border-radius: 8px;
+        padding: 12px 23px 13px 23px;
+        color: #707070;
+        border: 1px solid #707070;
+        background-color: #F2EDE9;
+        position:relative;
+    }
+}
