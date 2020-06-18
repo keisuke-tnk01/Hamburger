@@ -1,27 +1,65 @@
 <!doctype html>
-<html lamg="en">
+<html lang="en">
 
 <head>
     <meta charser="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>hamburger</title>
     <meta name="description" content="">
 </head>
 
 <body>
+    <sidebar id="slideL" class="off">
+        <div class="slide-inner">
+            <h2>Menu</h2>
+            <div class="burger">
+                <h3>バーガー</h3>
+                <p>ハンバーガー</p>
+                <p>チーズバーガー</p>
+                <p>テリヤキバーガー</p>
+                <p>アボカドバーガー</p>
+                <p>フィッシュバーガー</p>
+                <p>ベーコンバーガー</p>
+                <p>チキンバーガー</p>
+            </div>
+            <div class="side">
+                <h3>サイド</h3>
+                <p>ポテト</p>
+                <p>サラダ</p>
+                <p>ナゲット</p>
+                <p>コーン</p>
+            </div>
+            <div class="drink">
+                <h3>ドリンク</h3>
+                <p>コーラ</p>
+                <p>ファンタ</p>
+                <p>オレンジ</p>
+                <p>アップル</p>
+                <p>紅茶（Ice/Hot）</p>
+                <p>コーヒー（Ice/Hot）</p>
+            </div>
+        </div>
+    </sidebar>
+
     <header>
         <div class="menu">
             <p>Menu</p>
         </div>
         <h1>Hamburger</h1>
         <form role="search" method="get" id="serchform" class="serchform">
-            <div> 
+            <div>
                 <input type="text" class="searchtext" placeholder="&#xf002;">
                 <label>
-                <input type="submit" class="searchsubmit" value="検索">
+                    <input type="submit" class="searchsubmit" value="検索">
                 </label>
             </div>
         </form>
@@ -58,46 +96,43 @@
         </div>
         <section>
             <div class="map">
-                <h2>見出しが入ります</h2>
-                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                </p>
+                <div class="map-comment">
+                    <h2>見出しが入ります</h2>
+                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                </div>
             </div>
         </section>
     </main>
 
-    <sidebar>
-        <h2>Menu</h2>
-        <div class="burger">
-            <h3>バーガー</h3>
-            <p>ハンバーガー</p>
-            <p>チーズバーガー</p>
-            <p>テリヤキバーガー</p>
-            <p>アボカドバーガー</p>
-            <p>フィッシュバーガー</p>
-            <p>ベーコンバーガー</p>
-            <p>チキンバーガー</p>
-        </div>
-        <div class="side">
-            <h3>サイド</h3>
-            <p>ポテト</p>
-            <p>サラダ</p>
-            <p>ナゲット</p>
-            <p>コーン</p>
-        </div>
-        <div class="drink">
-            <h3>ドリンク</h3>
-            <p>コーラ</p>
-            <p>ファンタ</p>
-            <p>オレンジ</p>
-            <p>アップル</p>
-            <p>紅茶（Ice/Hot）</p>
-            <p>コーヒー（Ice/Hot）</p>
-        </div>
-    </sidebar>
     <footer>
         <h2>ショップ情報|ヒストリー</h2>
         <p>Copyright : RaiseTech</p>
     </footer>
+
+    <script>
+        //クリックで表示
+        $('#slideL').on('click', function () {
+            if ($('#slideL').hasClass('off')) {
+                $('#slideL').removeClass('off');
+                $(this).animate({ 'marginLeft': '400px' }, 300).addClass('on');
+            } else {
+                $('#slideL').addClass('off');
+                $(this).animate({ 'marginLeft': '0px' }, 300);
+            }
+        });
+        //左のコンテンツ用にウィンドウの高さを取得
+        $(document).ready(function () {
+            fit();
+            $(window).resize(function () {
+                fit();
+            })
+            function fit() {
+                var h = $(window).height();
+                $('.slide-inner').css("height", h);
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -1,115 +1,113 @@
 .page-top {
-    background-image    : url(/images/top_bg.jpg);
-    width               : 375px;
-    height              : 285px;
+    background-image: url(/images/top_bg.jpg);
+    width: 375px;
+    height: 285px;
 
-    & h2 {
-        color           : #fff;
-        font-size       : 2.25rem;
-        /*font-family     : "M+ 1m";*/
-        padding : 119px 0px 118px 25px;
+    h2 {
+        color: #fff;
+        font-size: 2.25rem;
+        font-family: "M+ 1m";
+        padding: 119px 0px 118px 25px;
     }
 }
 
 .container {
-   
-    & h2 {
-        color           : #fff;
-        font-size       : 2.56rem;
-        font-family     : Roboto;
+    h2 {
+        color: #fff;
+        font-size: 2.56rem;
+        font-family: Roboto;
         padding: 13px 0px 0px 12px;
         position: relative;
-        
     }
-    & h2::after {
+    h2::after {
         content: "";
         position: absolute;
         left: 12px;
-        bottom: -0.71rem;/*線の上下位置*/
-        width: 2.12rem;/*線の長さ*/
-        height: 0.31rem;/*線の太さ*/
-        background-color: #fff;/*線の色*/
+        bottom: -0.71rem; /*線の上下位置*/
+        width: 2.12rem; /*線の長さ*/
+        height: 0.31rem; /*線の太さ*/
+        background-color: #fff; /*線の色*/
     }
 
-    & h3 {
+    h3 {
         font-size: 1.375rem;
-        font-family     : "M+ 1m";
+        font-family: "M+ 1m";
         padding: 19px 0px 21px 10px;
     }
 
-    & p {
+    p {
         font-size: 1rem;
         line-height: 2.31rem;
         padding: 0px 14px 20px 10px;
     }
 
-    & .take-out {
+    .take-out {
         background-image: url(/images/takeout_bg.jpg);
-        margin-top      : 20px;
-        width           : 335px;
-        height          : 642px;
+        margin-top: 20px;
+        width: 335px;
+        height: 642px;
     }
-    & .eat-in {
+    .eat-in {
         background-image: url(/images/eatin_bg.jpg);
-        margin-top      : 20px;
-        width           : 335px;
-        height          : 642px;
+        margin-top: 20px;
+        width: 335px;
+        height: 642px;
     }
-    & .content1 {
-        margin          : 220px 10px 10px 10px;
+    .content1 {
+        margin: 220px 10px 10px 10px;
     }
-    & .content2 {
-        margin          : 9px 10px 10px 10px;
+    .content2 {
+        margin: 9px 10px 10px 10px;
     }
-    & .content1, .content2 {
-        width           : 314px;
-        height          : 163px;
+    .content1,
+    .content2 {
+        width: 314px;
+        height: 163px;
         background-color: #fff;
-        opacity         : 0.8;
-        color: #3C2A10;
+        opacity: 0.8;
+        color: #3c2a10;
         line-height: 2.31rem;
     }
-
 }
-.map {
-    background-image    : url(/images/map_bg.jpg);
-    width               : 375px;
-    height              : 691px;
-    margin-top          : 49px;
-    
 
-    & h2 {
-        font-size: 1.875rem;
-        color: #fff;
+.map {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_bg.jpg);/*map画像にカラーフィルター黒*/
+    width: 375px;
+    height: 691px;
+    margin-top: 49px;
+    background-color: #000000;
+    opacity: 0.6;
+
+    .map-comment {
         background-color: #000000;
-        opacity: 0.6;
+        opacity: 0.8;
+        width: 375px;
+        height: 415px;
+        color: #fff;
+    }
+    h2 {
+        font-size: 1.875rem;
         height: 120px;
         padding: 40px 0px 20px 40px;
         position: relative;
-        
     }
-    & h2::after {
+    h2::after {
         content: "";
         position: absolute;
         top: 100px;
         left: 20%;
         transform: translateX(-50%);
-        bottom: -1.375rem;/*線の上下位置*/
+        bottom: -1.375rem; /*線の上下位置*/
         display: inline-block;
         justify-content: center;
-        width: 4.69rem;/*線の長さ*/
-        height: 0.20rem;/*線の太さ*/
-        background-color: #fff;/*線の色*/
+        width: 4.69rem; /*線の長さ*/
+        height: 0.2rem; /*線の太さ*/
+        background-color: #fff; /*線の色*/
     }
-    & p {
+    p {
         font-size: 0.875rem;
-        color: #fff;
-        background-color: #000000;
-        opacity: 0.6;
+        height              : 295px;
         padding: 0px 40px 51px 40px;
-        height              : 571px;
         line-height: 2.94rem;
-        
-        
     }
 }

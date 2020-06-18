@@ -23,7 +23,7 @@
 header {
   width: 375px;
   height: 217px;
-  background-color: #FFF7EF;
+  background-color: #fff7ef;
   color: #707070;
   font-family: Roboto;
 }
@@ -77,7 +77,7 @@ header label {
   padding: 12px 23px 13px 23px;
   color: #707070;
   border: 1px solid #707070;
-  background-color: #F2EDE9;
+  background-color: #f2ede9;
   position: relative;
 }
 
@@ -90,7 +90,7 @@ header label {
 .page-top h2 {
   color: #fff;
   font-size: 2.25rem;
-  /*font-family     : "M+ 1m";*/
+  font-family: "M+ 1m";
   padding: 119px 0px 118px 25px;
 }
 
@@ -150,27 +150,37 @@ header label {
   margin: 9px 10px 10px 10px;
 }
 
-.container .content1, .container .content2 {
+.container .content1,
+.container .content2 {
   width: 314px;
   height: 163px;
   background-color: #fff;
   opacity: 0.8;
-  color: #3C2A10;
+  color: #3c2a10;
   line-height: 2.31rem;
 }
 
 .map {
-  background-image: url(/images/map_bg.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/map_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_bg.jpg);
+  /*map画像にカラーフィルター黒*/
   width: 375px;
   height: 691px;
   margin-top: 49px;
+  background-color: #000000;
+  opacity: 0.6;
+}
+
+.map .map-comment {
+  background-color: #000000;
+  opacity: 0.8;
+  width: 375px;
+  height: 415px;
+  color: #fff;
 }
 
 .map h2 {
   font-size: 1.875rem;
-  color: #fff;
-  background-color: #000000;
-  opacity: 0.6;
   height: 120px;
   padding: 40px 0px 20px 40px;
   position: relative;
@@ -191,7 +201,7 @@ header label {
           justify-content: center;
   width: 4.69rem;
   /*線の長さ*/
-  height: 0.20rem;
+  height: 0.2rem;
   /*線の太さ*/
   background-color: #fff;
   /*線の色*/
@@ -199,11 +209,8 @@ header label {
 
 .map p {
   font-size: 0.875rem;
-  color: #fff;
-  background-color: #000000;
-  opacity: 0.6;
+  height: 295px;
   padding: 0px 40px 51px 40px;
-  height: 571px;
   line-height: 2.94rem;
 }
 
@@ -224,12 +231,31 @@ footer p {
   font-size: 0.875;
 }
 
+#slideL {
+  z-index: 100;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: -400px;
+  width: 400px;
+  height: auto;
+  padding: 0 40px 0 0;
+  background: #999;
+}
+
+#slideL .slide-inner {
+  overflow: auto;
+  overflow-x: hidden;
+  background: #ddd;
+}
+
 sidebar {
   color: #707070;
-  background-color: #FFF7EF;
+  background-color: #fff7ef;
   width: 328px;
   height: 1826px;
-  display: none;
+  float: right;
+  /*display: none;*/
 }
 
 sidebar h2 {
@@ -242,6 +268,7 @@ sidebar h2 {
 }
 
 sidebar h3 {
+  font-family: "mplus-1m-bold";
   font-size: 1.5rem;
   margin-bottom: 2.625rem;
   position: relative;
@@ -249,13 +276,16 @@ sidebar h3 {
 }
 
 sidebar p {
+  font-family: "M+ 1m";
   font-size: 1.25rem;
   line-height: 2.94rem;
   position: relative;
   left: 4.125rem;
 }
 
-sidebar .burger, sidebar .side, sidebar .drink {
+sidebar .burger,
+sidebar .side,
+sidebar .drink {
   margin-bottom: 2.5rem;
 }
 
@@ -581,7 +611,7 @@ svg:not([fill]) {
 }
 
 * {
-  max-width: 400px;
+  max-width: 100%;
   margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

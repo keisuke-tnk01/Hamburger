@@ -1,30 +1,30 @@
 header {
-    width               : 375px;
-    height              : 217px;
-    background-color    : #FFF7EF;      
-    color               : #707070;
-    font-family         : Roboto;
+    width: 375px;
+    height: 217px;
+    background-color: #fff7ef;
+    color: #707070;
+    font-family: Roboto;
 
-    & .menu {
+    .menu {
         float: right;
-        font-size       : 1.25rem;
+        font-size: 1.25rem;
         margin: 14px 16px 0px 0px;
         margin-right: 16px;
     }
 
-    & h1 {
-        font-size       : 2.5rem;
+    h1 {
+        font-size: 2.5rem;
         padding: 40px 0px 0px 86px;
     }
 
-    & form {
+    form {
         line-height: 120px;
         left: 24px;
         height: 2.875rem;
         display: flex;
     }
 
-    & .searchtext {
+    .searchtext {
         font-family: FontAwesome;
         font-style: normal;
         font-weight: normal;
@@ -46,16 +46,15 @@ header {
         margin: 0rem 0.75rem 0rem 1.5rem;
         border: 1px solid #707070;
         background-color: #fff;
-
     }
 
-    & label {
+    label {
         height: 2.875rem;
         border-radius: 8px;
         padding: 12px 23px 13px 23px;
         color: #707070;
         border: 1px solid #707070;
-        background-color: #F2EDE9;
-        position:relative;
+        background-color: #f2ede9;
+        position: relative;
     }
 }

@@ -1,16 +1,16 @@
 @charset "UTF-8";
 @font-face {
-    font-family: "M+ 1m";
-    src: local("M+ 1m");
-  }
-  @font-face {
-    font-family: "Rounded M+ 1m regular";
-    src: local("Rounded M+ 1m regular");
-  }
-  @font-face {
-    font-family: "Rounded M+ 2m regular";
-    src: local("Rounded M+ 2m regular");
-  }
+  font-family: "M+ 1m";
+  src: local("M+ 1m");
+}
+@font-face {
+  font-family: "Rounded M+ 1m regular";
+  src: local("Rounded M+ 1m regular");
+}
+@font-face {
+  font-family: "Rounded M+ 2m regular";
+  src: local("Rounded M+ 2m regular");
+}
 /*@import "setting/**";
 @import "function/**";
 @import "layout/**";
@@ -22,16 +22,9 @@
 @import "layout/_footer.scss";
 @import "layout/_sidebar.scss";
 @import "foundation/_reset.scss";
+@import "foundation/_base.scss";
 
 * {
-    max-width           : 400px;
-    margin              : auto;
+  max-width: 100%;
+  margin: auto;
 }
-
-
-
-
-
-
-
-
