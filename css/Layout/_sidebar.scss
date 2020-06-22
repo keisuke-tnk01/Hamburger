@@ -1,58 +1,73 @@
-#slideL {
-    z-index: 100;
-    cursor: pointer;
-    position: fixed;
-    top: 0;
-    left: -400px;
-    width: 400px;
-    height: auto;
-    padding: 0 40px 0 0;
-    background: #999;
-}
-
-#slideL .slide-inner {
-    overflow: auto;
-    overflow-x: hidden;
-    background: #ddd;
-}
-
 sidebar {
     color: #707070;
     background-color: #fff7ef;
-    width: 328px;
-    height: 1826px;
-    float: right;
-    /*display: none;*/
-
+    width: 32.8rem;
     
+    position: fixed;
+    z-index: 10;
+    right: -35rem;
+    top: 0;
+    @include breakpoint( pc ) { 
+       width: 19.2%;
+       float: right;
+       right: 0rem;
+       position: absolute;
+       height: 100%;
+    }
 
+    .l-sidebar_title {
+        display: none;
+        @include breakpoint( pc ) { 
+            display: block;
+        }
+    }
+
+    .l-menu_cancel_btn {
+        float: right;
+        position: relative;
+        top: 2.5rem;
+        right: 1.7rem;
+        @include breakpoint( pc ) { 
+            display: none;
+        }
+    }
+    .l-menu_list{
+        padding-top: 21.2rem;
+    }
     h2 {
         font-family: Roboto;
-        font-size: 2.125rem;
+        font-size: 3.4rem;
         position: relative;
-        left: 2.875rem;
-        margin-top: 5.125rem;
-        margin-bottom: 5.31rem;
+        left: 4.6rem;
+        margin-top: 8.2rem;
+        margin-bottom: 8.5rem;
     }
 
     h3 {
         font-family: "mplus-1m-bold";
-        font-size: 1.5rem;
-        margin-bottom: 2.625rem;
+        font-size: 2.4rem;
+        margin-bottom: 4.2rem;
         position: relative;
-        left: 2.875rem;
+        left: 4.6rem;
     }
 
     p {
         font-family: "M+ 1m";
-        font-size: 1.25rem;
-        line-height: 2.94rem;
+        font-size: 2rem;
+        line-height: 4.7rem;
         position: relative;
-        left: 4.125rem;
+        left: 6.6rem;
     }
-    .burger,
-    .side,
-    .drink {
-        margin-bottom: 2.5rem;
+    .l-burger,
+    .l-side,
+    .l-drink {
+        margin-bottom: 4rem;
+    }
+    .l-show{
+        transform: translate3d(-350, 0, 0);
+    }
+    .l-sidebar .is-open{
+        left: 10%;
+        overflow-y: scroll;
     }
 }

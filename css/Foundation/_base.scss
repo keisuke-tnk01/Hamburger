@@ -1,3 +1,16 @@
+:root {
+    font-size: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html body {
+    height: 100%;
+}
+
 // mixin
 @mixin breakpoint( $point ) {
     @if $point == tablet {
