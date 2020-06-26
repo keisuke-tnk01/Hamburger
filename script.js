@@ -1,3 +1,4 @@
-//クリックで表示
-const sidebarIn = document.querySelector( "#js-open_menu" );
-sidebarIn,addEventListner
+$("js-open_menu").on("click", function() {
+  $(this).next().slideToggle();
+  $(this).toggleClass("active");
+});

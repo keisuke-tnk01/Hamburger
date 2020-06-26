@@ -350,16 +350,29 @@ img {
   height: auto;
 }
 
+* {
+  max-width: 100%;
+  margin: auto;
+}
+
 html body {
   height: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
+  margin: auto;
 }
 
 header {
-  width: 100%;
   height: 217px;
   background-color: #fff7ef;
   color: #707070;
   font-family: Roboto;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 769px) {
@@ -372,8 +385,12 @@ header {
 header .l-menu {
   float: right;
   font-size: 2rem;
-  margin-top: 1.4rem;
-  margin-right: 1.6rem;
+  margin: 1.4rem 1.6rem 0 0;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 769px) {
@@ -386,42 +403,114 @@ header .l-site_title {
   font-size: 4rem;
   text-align: center;
   padding-top: 4rem;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
-header form {
+@media (min-width: 769px) {
+  header .l-site_title {
+    margin-top: 5rem;
+    margin-left: 6.5rem;
+    display: inline-block;
+  }
+}
+
+header .l-searchform {
   line-height: 4.6rem;
-  height: 4.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 3.8rem;
-  margin: 0 auto;
+  margin-top: 3.8rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 769px) {
+  header .l-searchform {
+    float: right;
+    display: inline-block;
+    margin-top: 8.6rem;
+    margin-right: 3rem;
+  }
 }
 
 header .l-searchtext {
+  -webkit-appearance: none;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Fontawesome;
   font-style: normal;
   font-weight: normal;
   font-size: 2.4rem;
   text-decoration: inherit;
   padding: 1.1rem 1.6rem;
-  border-radius: 8px;
-  height: 4.6rem;
-  width: 23rem;
-  margin: 0rem 1.2rem 4rem 2.4rem;
-  border: 1px solid #707070;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #707070;
   background-color: #fff;
+  height: 4.6rem;
+  width: 61.3%;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  header .l-searchtext {
+    width: 47.5%;
+  }
+}
+
+@media (min-width: 769px) {
+  header .l-searchtext {
+    width: 25.4vw;
+  }
 }
 
 header label {
-  border-radius: 8px;
-  padding: 12px 23px 13px 23px;
+  -webkit-appearance: none;
+  display: inline-block;
+  border-radius: 0.8rem;
+  margin-left: 1.2rem;
+  height: 4.6rem;
+  padding: 0 2.3rem 0 2.3rem;
   font-size: 1.6rem;
-  margin-bottom: 4.8rem;
   color: #707070;
-  border: 1px solid #707070;
+  border: 0.1rem solid #707070;
   background-color: #f2ede9;
-  vertical-align: 0.4rem;
+  vertical-align: top;
+  display: inline-block;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  header label {
+    padding: 0 5.4rem 0 5.4rem;
+  }
+}
+
+main {
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 769px) {
@@ -439,6 +528,34 @@ main .l-page-top {
   max-width: 100%;
   height: auto;
   position: relative;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-page-top {
+    background-image: url(/images/top_tablet_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  }
+}
+
+@media (min-width: 641px) and (min-width: 769px) {
+  main .l-page-top {
+    background-image: url(/images/top_pc_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 main .l-page-top .l-main_title {
@@ -450,6 +567,11 @@ main .l-page-top .l-main_title {
 
 main .l-container {
   /*レスポンシブ　tablet PC*/
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 641px) {
@@ -503,6 +625,11 @@ main .l-container .l-take_out {
   width: 89.5%;
   height: 64.2rem;
   /*レスポンシブ　tablet PC*/
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 641px) {
@@ -521,6 +648,11 @@ main .l-container .l-eat_in {
   width: 89.5%;
   height: 64.2rem;
   /*レスポンシブ　tablet PC*/
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 641px) {
@@ -555,11 +687,45 @@ main .l-map {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  width: 100%;
+  max-width: 100%;
   height: 69.1rem;
   margin-top: 4.9rem;
   background-color: #000000;
   opacity: 0.6;
+  /*レスポンシブ　tablet*/
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-map {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/map_tablet_bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_tablet_bg.jpg);
+    /*map画像にカラーフィルター黒*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*レスポンシブ　PC*/
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  }
+}
+
+@media (min-width: 641px) and (min-width: 769px) {
+  main .l-map {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/map_pc_bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_pc_bg.jpg);
+    /*map画像にカラーフィルター黒*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 main .l-map .l-map-comment {
@@ -569,6 +735,11 @@ main .l-map .l-map-comment {
   width: 100%;
   height: 50%;
   /*レスポンシブ　tablet*/
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 641px) {
@@ -576,6 +747,11 @@ main .l-map .l-map-comment {
     width: 100%;
     height: 100%;
     /*レスポンシブ　PC*/
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
   }
 }
 
@@ -624,12 +800,19 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 769px) {
   footer {
     width: 100%;
     float: left;
+    z-index: 1000;
+    position: relative;
   }
 }
 
@@ -656,20 +839,32 @@ sidebar {
   z-index: 10;
   right: -35rem;
   top: 0;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 769px) {
   sidebar {
-    width: 19.2%;
+    width: 19.3%;
     float: right;
     right: 0rem;
     position: absolute;
-    height: 100%;
+    display: block;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
   }
 }
 
 sidebar .l-sidebar_title {
   display: none;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 769px) {
@@ -683,6 +878,13 @@ sidebar .l-menu_cancel_btn {
   position: relative;
   top: 2.5rem;
   right: 1.7rem;
+  width: 1rem;
+  height: 1rem;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
 @media (min-width: 769px) {
@@ -736,8 +938,13 @@ sidebar .l-sidebar .is-open {
   overflow-y: scroll;
 }
 
-* {
-  /*max-width: 100%;*/
-  margin: auto;
+.pageContainer {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,9 +7,18 @@ img {
     height: auto;
 }
 
-html body {
-    height: 100%;
-}
+* {
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  html body {
+      height: 100%;
+      width: 100%;
+      max-width: 100%;
+      min-width: 320px;
+      margin: auto;
+  }
 
 // mixin
 @mixin breakpoint( $point ) {
@@ -23,9 +32,9 @@ html body {
             @content ;
         }
     }
-    @if $point == wide {
+    /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
         }
-    }
+    }*/
 }
