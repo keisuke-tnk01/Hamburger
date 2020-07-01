@@ -1,8 +1,11 @@
 main {
+    opacity: 1;
     @include breakpoint(pc) {
         width: 80.7%;
         float: left;
     }
+ 
+
     .l-page-top {
         background-image: url(/images/top_bg.jpg);
         background-repeat: no-repeat;
@@ -11,13 +14,13 @@ main {
         max-width: 100%;
         height: auto;
         position: relative;
-        
+
         @include breakpoint(tablet) {
             background-image: url(/images/top_tablet_bg.jpg);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: cover;
-            
+
             @include breakpoint(pc) {
                 background-image: url(/images/top_pc_bg.jpg);
                 background-repeat: no-repeat;

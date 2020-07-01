@@ -367,6 +367,7 @@ header {
   height: 217px;
   background-color: #fff7ef;
   color: #707070;
+  opacity: 1.0;
   font-family: Roboto;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -386,6 +387,7 @@ header .l-menu {
   float: right;
   font-size: 2rem;
   margin: 1.4rem 1.6rem 0 0;
+  cursor: pointer;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
@@ -506,6 +508,7 @@ header label {
 }
 
 main {
+  opacity: 1;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
@@ -800,6 +803,7 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  opacity: 1.0;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
@@ -831,34 +835,43 @@ footer p {
   padding-top: 3.5rem;
 }
 
-sidebar {
+sidebar .l-sidebar_wrapper {
+  /*これがクリック時に表示される*/
   color: #707070;
   background-color: #fff7ef;
   width: 32.8rem;
-  position: fixed;
-  z-index: 10;
-  right: -35rem;
+  position: absolute;
+  z-index: 200;
+  right: 0rem;
+  display: none;
+  padding-bottom: 5000px;
+  margin-bottom: -5000px;
   top: 0;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
         }
     }*/
+  /*.l-show {
+            transform: translate3d(-350, 0, 0);
+        }
+        .l-sidebar .is-open {
+            left: 10%;
+            overflow-y: scroll;
+        }*/
 }
 
 @media (min-width: 769px) {
-  sidebar {
+  sidebar .l-sidebar_wrapper {
     width: 19.3%;
     float: right;
     right: 0rem;
     position: absolute;
     display: block;
-    padding-bottom: 5000px;
-    margin-bottom: -5000px;
   }
 }
 
-sidebar .l-sidebar_title {
+sidebar .l-sidebar_wrapper .l-sidebar_title {
   display: none;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -868,18 +881,19 @@ sidebar .l-sidebar_title {
 }
 
 @media (min-width: 769px) {
-  sidebar .l-sidebar_title {
+  sidebar .l-sidebar_wrapper .l-sidebar_title {
     display: block;
   }
 }
 
-sidebar .l-menu_cancel_btn {
+sidebar .l-sidebar_wrapper .l-menu_cancel_btn {
   float: right;
   position: relative;
   top: 2.5rem;
   right: 1.7rem;
   width: 1rem;
   height: 1rem;
+  cursor: pointer;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
@@ -888,16 +902,16 @@ sidebar .l-menu_cancel_btn {
 }
 
 @media (min-width: 769px) {
-  sidebar .l-menu_cancel_btn {
+  sidebar .l-sidebar_wrapper .l-menu_cancel_btn {
     display: none;
   }
 }
 
-sidebar .l-menu_list {
+sidebar .l-sidebar_wrapper .l-menu_list {
   padding-top: 21.2rem;
 }
 
-sidebar h2 {
+sidebar .l-sidebar_wrapper h2 {
   font-family: Roboto;
   font-size: 3.4rem;
   position: relative;
@@ -906,7 +920,7 @@ sidebar h2 {
   margin-bottom: 8.5rem;
 }
 
-sidebar h3 {
+sidebar .l-sidebar_wrapper h3 {
   font-family: "mplus-1m-bold";
   font-size: 2.4rem;
   margin-bottom: 4.2rem;
@@ -914,7 +928,7 @@ sidebar h3 {
   left: 4.6rem;
 }
 
-sidebar p {
+sidebar .l-sidebar_wrapper p {
   font-family: "M+ 1m";
   font-size: 2rem;
   line-height: 4.7rem;
@@ -922,20 +936,10 @@ sidebar p {
   left: 6.6rem;
 }
 
-sidebar .l-burger,
-sidebar .l-side,
-sidebar .l-drink {
+sidebar .l-sidebar_wrapper .l-burger,
+sidebar .l-sidebar_wrapper .l-side,
+sidebar .l-sidebar_wrapper .l-drink {
   margin-bottom: 4rem;
-}
-
-sidebar .l-show {
-  -webkit-transform: translate3d(-350, 0, 0);
-          transform: translate3d(-350, 0, 0);
-}
-
-sidebar .l-sidebar .is-open {
-  left: 10%;
-  overflow-y: scroll;
 }
 
 .pageContainer {
@@ -944,7 +948,19 @@ sidebar .l-sidebar .is-open {
   overflow: hidden;
 }
 
-.wrapper {
+.document-wrapper {
   overflow: hidden;
+}
+
+/*jQueryサイドバー表示*/
+.l-open_menu-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

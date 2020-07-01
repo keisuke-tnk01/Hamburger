@@ -6,6 +6,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    opacity: 1.0;
     @include breakpoint( pc ) { 
         width: 100%;
         float: left;

@@ -2,6 +2,7 @@ header {
     height: 217px;
     background-color: #fff7ef;
     color: #707070;
+    opacity: 1.0;
     font-family: Roboto;
     @include breakpoint ( pc ) {
         width: 80.7%;
@@ -12,8 +13,9 @@ header {
         float: right;
         font-size: 2rem;
         margin: 1.4rem 1.6rem 0 0;
+        cursor: pointer;
         @include breakpoint ( pc ) {
-            display: none;
+        display: none;
         }
     }
 
