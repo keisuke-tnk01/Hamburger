@@ -364,6 +364,7 @@ html body {
 }
 
 header {
+  overflow: hidden;
   height: 217px;
   background-color: #fff7ef;
   color: #707070;
@@ -507,13 +508,22 @@ header label {
   }
 }
 
+/*Sidebar表示時に背景固定*/
 main {
+  overflow: hidden;
   opacity: 1;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
         }
     }*/
+}
+
+main.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
 }
 
 @media (min-width: 769px) {
@@ -796,6 +806,7 @@ main .l-map p {
 }
 
 footer {
+  overflow: hidden;
   color: #fff;
   max-width: 100%;
   height: 150px;
@@ -803,12 +814,19 @@ footer {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  opacity: 1.0;
+  opacity: 1;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
         }
     }*/
+}
+
+footer.fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
 }
 
 @media (min-width: 769px) {
@@ -835,6 +853,7 @@ footer p {
   padding-top: 3.5rem;
 }
 
+/*Sidebar表示時に背景固定*/
 sidebar .l-sidebar_wrapper {
   /*これがクリック時に表示される*/
   color: #707070;
@@ -842,8 +861,7 @@ sidebar .l-sidebar_wrapper {
   width: 32.8rem;
   position: absolute;
   z-index: 200;
-  right: 0rem;
-  display: none;
+  right: -35rem;
   padding-bottom: 5000px;
   margin-bottom: -5000px;
   top: 0;
@@ -952,7 +970,7 @@ sidebar .l-sidebar_wrapper .l-drink {
   overflow: hidden;
 }
 
-/*jQueryサイドバー表示*/
+/*jQueryサイドバー表示の黒透過*/
 .l-open_menu-wrapper {
   position: fixed;
   top: 0;
