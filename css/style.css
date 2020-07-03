@@ -369,7 +369,8 @@ header {
   background-color: #fff7ef;
   color: #707070;
   opacity: 1.0;
-  font-family: Roboto;
+  font-family: "Roboto";
+  vertical-align: bottom;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
@@ -508,7 +509,6 @@ header label {
   }
 }
 
-/*Sidebar表示時に背景固定*/
 main {
   overflow: hidden;
   opacity: 1;
@@ -517,13 +517,7 @@ main {
             @content ;
         }
     }*/
-}
-
-main.fixed {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
+  /*以下archiveのcss*/
 }
 
 @media (min-width: 769px) {
@@ -541,6 +535,7 @@ main .l-page-top {
   max-width: 100%;
   height: auto;
   position: relative;
+  display: block;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
@@ -805,6 +800,118 @@ main .l-map p {
   line-height: 4.7rem;
 }
 
+main .l-archive-top {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/archive_top_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/archive_top_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+main .l-archive-main_title {
+  color: #fff;
+  font-size: 3.6rem;
+  font-family: "M+ 1m";
+  padding: 11.9rem 0 0 3.7rem;
+}
+
+main .l-archive-main_menu {
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "M+ 1m";
+  padding: 0 0 11.5rem 3.7rem;
+}
+
+main .l-archive-container h3 {
+  font-size: 2.8rem;
+  margin: 3rem 0 3.2rem 2.2rem;
+}
+
+main .l-archive-container p {
+  font-size: 1.6rem;
+  margin-left: 2.2rem;
+  margin-right: 1.8rem;
+  height: 27.6rem;
+  width: 89.3%;
+}
+
+main .l-archive_card {
+  text-align: center;
+  width: 89.5%;
+  height: 58.5rem;
+  margin: 1rem 2rem 1rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main .l-card_imageframe {
+  height: 23rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  /*図の下の空白を消す*/
+}
+
+main .l-card_contents {
+  background-color: #3c2b1c;
+  color: #fff;
+  height: 35.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 1.7rem;
+  text-align: initial;
+}
+
+main .l-card_contents h2 {
+  padding-top: 3.05rem;
+  padding-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+main .l-card_contents .l-card_text {
+  font-size: 1.6rem;
+}
+
+main .l-card_contents .l-card_text h3 {
+  padding-bottom: 1.1rem;
+}
+
+main .l-card_contents .l-card_text p {
+  height: 11.4rem;
+  text-align: left;
+}
+
+main .l-card_contents .l-card_btn {
+  -webkit-appearance: none;
+  border-radius: 5rem;
+  width: 16.3rem;
+  height: 4.2rem;
+  padding: 1rem 4.1rem 1rem 4.1rem;
+  font-size: 1.6rem;
+  color: #707070;
+  border: 0.1rem solid #707070;
+  background-color: #FFFFFF;
+  display: block;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+main .l-card_contents .l-archive-page_feed {
+  height: 50rem;
+  margin-top: 6.04rem;
+  margin-bottom: 3.1rem;
+}
+
+main .l-card_contents .l-page_previous {
+  font-size: 1.6rem;
+}
+
 footer {
   overflow: hidden;
   color: #fff;
@@ -815,18 +922,17 @@ footer {
   background-position: center center;
   background-size: cover;
   opacity: 1;
+  /*&.fixed {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }*/
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
         }
     }*/
-}
-
-footer.fixed {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0;
 }
 
 @media (min-width: 769px) {
@@ -853,7 +959,6 @@ footer p {
   padding-top: 3.5rem;
 }
 
-/*Sidebar表示時に背景固定*/
 sidebar .l-sidebar_wrapper {
   /*これがクリック時に表示される*/
   color: #707070;
