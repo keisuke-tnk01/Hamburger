@@ -207,6 +207,10 @@ main {
         font-family: "M+ 1m";
         padding: 0 0 11.5rem 3.7rem;
     }
+    .l-archive_main {
+        background-color: #fffdfa;
+        padding-top: 11.5rem;
+    }
     .l-archive-container {
         h3 {
             font-size: 2.8rem;
@@ -224,6 +228,7 @@ main {
             }
         }
     }
+
     .l-archive_card {
         text-align: center;
         width: 89.5%;
@@ -236,9 +241,9 @@ main {
             margin-top: 2rem;
             margin-bottom: 2rem;
             @include breakpoint(pc) {
-            height: 47.1rem;
-            margin-top: 3rem;
-            margin-bottom: 3rem;
+                height: 47.1rem;
+                margin-top: 3rem;
+                margin-bottom: 3rem;
             }
         }
     }
@@ -313,11 +318,57 @@ main {
             text-align: center;
             margin-top: 4rem;
         }
-        .l-pagenaition {
-            justify-content: left;
+    }
+    /*ページフィード*/
+    .l-pagenation {
+        display: flex;
+        font-family: Roboto;
+        font-size: 1.6rem;
+        color: #707070;
+        padding-bottom: 3rem;
+        padding-top: 6.1rem;
+        @include breakpoint(tablet) {
+            width: 70rem;
+            padding-top: 10.5rem;
+            @include breakpoint(pc) {
+                padding-top: 15rem;
+                padding-bottom: 6.4rem;
+            }
+        }
+    }
+    .l-page_view {
+        display: none;
+        @include breakpoint(tablet) {
+            display: block;
+            margin-right: 1.9rem;
+        }
+    }
+    .l-page_logo {
+        @include breakpoint(tablet) {
+            margin-right: 0rem;
+            margin-left: 0rem;
+        }
+    }
+    .l-page_comment {
+        margin: 0.82rem;
+        @include breakpoint(tablet) {
+            display: none;
+        }
+    }
+    .l-page_container {
+        display: none;
+        @include breakpoint(tablet) {
+            display: block;
         }
         .l-page_number {
-            border: solid;
+            display: flex;
+            background-color: #fff;
+            text-decoration: none;
+            border: solid #707070 0.1rem;
+            color: #707070;
+            padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+            float: left;
+            margin: 0.75rem
         }
     }
 }

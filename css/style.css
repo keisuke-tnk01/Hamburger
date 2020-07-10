@@ -519,6 +519,7 @@ main {
         }
     }*/
   /*以下archiveのcss*/
+  /*ページフィード*/
 }
 
 @media (min-width: 769px) {
@@ -825,6 +826,11 @@ main .l-archive-main_menu {
   padding: 0 0 11.5rem 3.7rem;
 }
 
+main .l-archive_main {
+  background-color: #fffdfa;
+  padding-top: 11.5rem;
+}
+
 main .l-archive-container h3 {
   font-size: 2.8rem;
   margin: 3rem 0 3.2rem 2.2rem;
@@ -1016,14 +1022,113 @@ main .l-card_contents .l-card_btn {
   margin-top: 4rem;
 }
 
-main .l-card_contents .l-pagenaition {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+main .l-pagenation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Roboto;
+  font-size: 1.6rem;
+  color: #707070;
+  padding-bottom: 3rem;
+  padding-top: 6.1rem;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
 }
 
-main .l-card_contents .l-page_number {
-  border: solid;
+@media (min-width: 641px) {
+  main .l-pagenation {
+    width: 70rem;
+    padding-top: 10.5rem;
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  }
+}
+
+@media (min-width: 641px) and (min-width: 769px) {
+  main .l-pagenation {
+    padding-top: 15rem;
+    padding-bottom: 6.4rem;
+  }
+}
+
+main .l-page_view {
+  display: none;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-page_view {
+    display: block;
+    margin-right: 1.9rem;
+  }
+}
+
+main .l-page_logo {
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-page_logo {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+}
+
+main .l-page_comment {
+  margin: 0.82rem;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-page_comment {
+    display: none;
+  }
+}
+
+main .l-page_container {
+  display: none;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-page_container {
+    display: block;
+  }
+}
+
+main .l-page_container .l-page_number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  text-decoration: none;
+  border: solid #707070 0.1rem;
+  color: #707070;
+  padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+  float: left;
+  margin: 0.75rem;
 }
 
 footer {
