@@ -389,6 +389,7 @@ header .l-menu {
   float: right;
   font-size: 2rem;
   margin: 1.4rem 1.6rem 0 0;
+  z-index: 500;
   cursor: pointer;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -831,31 +832,97 @@ main .l-archive-container h3 {
 
 main .l-archive-container p {
   font-size: 1.6rem;
+  line-height: 3.7rem;
   margin-left: 2.2rem;
   margin-right: 1.8rem;
   height: 27.6rem;
   width: 89.3%;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-archive-container p {
+    height: 14.3rem;
+  }
 }
 
 main .l-archive_card {
   text-align: center;
   width: 89.5%;
   height: 58.5rem;
-  margin: 1rem 2rem 1rem 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-archive_card {
+    height: 35.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  }
+}
+
+@media (min-width: 641px) and (min-width: 769px) {
+  main .l-archive_card {
+    height: 47.1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
 
 main .l-card_imageframe {
   height: 23rem;
   width: 100%;
+  background-image: url(/images/archive_card_img.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: left;
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
   /*図の下の空白を消す*/
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-card_imageframe {
+    background-image: url(/images/archive_card_tablet_img.jpg);
+    float: left;
+    width: 50%;
+    height: 35.5rem;
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  }
+}
+
+@media (min-width: 641px) and (min-width: 769px) {
+  main .l-card_imageframe {
+    background-image: url(/images/archive_card_pc_img.jpg);
+    height: 47.1rem;
+  }
 }
 
 main .l-card_contents {
@@ -866,6 +933,29 @@ main .l-card_contents {
           box-sizing: border-box;
   padding-left: 1.7rem;
   text-align: initial;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-card_contents {
+    float: right;
+    width: 50%;
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  }
+}
+
+@media (min-width: 641px) and (min-width: 769px) {
+  main .l-card_contents {
+    height: 47.1rem;
+  }
 }
 
 main .l-card_contents h2 {
@@ -883,8 +973,32 @@ main .l-card_contents .l-card_text h3 {
 }
 
 main .l-card_contents .l-card_text p {
+  padding-right: 7.3rem;
   height: 11.4rem;
+  line-height: 3.7rem;
   text-align: left;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-card_contents .l-card_text p {
+    padding-right: 5.9rem;
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  }
+}
+
+@media (min-width: 641px) and (min-width: 769px) {
+  main .l-card_contents .l-card_text p {
+    padding-right: 10.4rem;
+  }
 }
 
 main .l-card_contents .l-card_btn {
@@ -896,20 +1010,20 @@ main .l-card_contents .l-card_btn {
   font-size: 1.6rem;
   color: #707070;
   border: 0.1rem solid #707070;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: block;
   text-align: center;
   margin-top: 4rem;
 }
 
-main .l-card_contents .l-archive-page_feed {
-  height: 50rem;
-  margin-top: 6.04rem;
-  margin-bottom: 3.1rem;
+main .l-card_contents .l-pagenaition {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
-main .l-card_contents .l-page_previous {
-  font-size: 1.6rem;
+main .l-card_contents .l-page_number {
+  border: solid;
 }
 
 footer {
@@ -970,6 +1084,8 @@ sidebar .l-sidebar_wrapper {
   padding-bottom: 5000px;
   margin-bottom: -5000px;
   top: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
@@ -1010,12 +1126,12 @@ sidebar .l-sidebar_wrapper .l-sidebar_title {
 }
 
 sidebar .l-sidebar_wrapper .l-menu_cancel_btn {
-  float: right;
+  float: left;
   position: relative;
   top: 2.5rem;
-  right: 1.7rem;
-  width: 1rem;
-  height: 1rem;
+  left: 27.9rem;
+  width: 3.2rem;
+  height: 3.2rem;
   cursor: pointer;
   /*@if $point == wide {
         @media ( min-width: 961px ) {

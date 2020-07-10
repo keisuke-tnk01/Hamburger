@@ -214,27 +214,53 @@ main {
         }
         p {
             font-size: 1.6rem;
+            line-height: 3.7rem;
             margin-left: 2.2rem;
             margin-right: 1.8rem;
             height: 27.6rem;
             width: 89.3%;
+            @include breakpoint(tablet) {
+                height: 14.3rem;
+            }
         }
     }
     .l-archive_card {
         text-align: center;
         width: 89.5%;
         height: 58.5rem;
-        margin: 1rem 2rem 1rem 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         box-sizing: border-box;
+        @include breakpoint(tablet) {
+            height: 35.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            @include breakpoint(pc) {
+            height: 47.1rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            }
+        }
     }
     .l-card_imageframe {
         height: 23rem;
         width: 100%;
+        background-image: url(/images/archive_card_img.jpg);
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: left;
         background-size: cover;
         box-sizing: border-box;
         display: block; /*図の下の空白を消す*/
+        @include breakpoint(tablet) {
+            background-image: url(/images/archive_card_tablet_img.jpg);
+            float: left;
+            width: 50%;
+            height: 35.5rem;
+            @include breakpoint(pc) {
+                background-image: url(/images/archive_card_pc_img.jpg);
+                height: 47.1rem;
+            }
+        }
     }
     .l-card_contents {
         background-color: #3c2b1c;
@@ -243,6 +269,13 @@ main {
         box-sizing: border-box;
         padding-left: 1.7rem;
         text-align: initial;
+        @include breakpoint(tablet) {
+            float: right;
+            width: 50%;
+            @include breakpoint(pc) {
+                height: 47.1rem;
+            }
+        }
         h2 {
             padding-top: 3.05rem;
             padding-bottom: 2.5rem;
@@ -254,31 +287,37 @@ main {
                 padding-bottom: 1.1rem;
             }
             p {
+                padding-right: 7.3rem;
                 height: 11.4rem;
+                line-height: 3.7rem;
                 text-align: left;
+                @include breakpoint(tablet) {
+                    padding-right: 5.9rem;
+                    @include breakpoint(pc) {
+                        padding-right: 10.4rem;
+                    }
+                }
             }
         }
         .l-card_btn {
-        -webkit-appearance: none;
-        border-radius: 5rem;
-        width: 16.3rem;
-        height: 4.2rem;
-        padding: 1rem 4.1rem 1rem 4.1rem;
-        font-size: 1.6rem;
-        color: #707070;
-        border: 0.1rem solid #707070;
-        background-color: #FFFFFF;
-        display: block;
-        text-align: center;
-        margin-top: 4rem;
+            -webkit-appearance: none;
+            border-radius: 5rem;
+            width: 16.3rem;
+            height: 4.2rem;
+            padding: 1rem 4.1rem 1rem 4.1rem;
+            font-size: 1.6rem;
+            color: #707070;
+            border: 0.1rem solid #707070;
+            background-color: #ffffff;
+            display: block;
+            text-align: center;
+            margin-top: 4rem;
         }
-        .l-archive-page_feed {
-            height: 50rem;
-            margin-top: 6.04rem;
-            margin-bottom: 3.1rem;
+        .l-pagenaition {
+            justify-content: left;
         }
-        .l-page_previous {
-            font-size:1.6rem;
+        .l-page_number {
+            border: solid;
         }
     }
 }

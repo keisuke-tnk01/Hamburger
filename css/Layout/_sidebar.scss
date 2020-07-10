@@ -10,7 +10,8 @@ sidebar {
         padding-bottom: 5000px;
         margin-bottom: -5000px;
         top: 0;
-
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
 
         @include breakpoint(pc) {
             width: 19.3%;
@@ -28,12 +29,12 @@ sidebar {
         }
 
         .l-menu_cancel_btn {
-            float: right;
+            float: left;
             position: relative;
             top: 2.5rem;
-            right: 1.7rem;
-            width: 1rem;
-            height: 1rem;
+            left: 27.9rem;
+            width: 3.2rem;
+            height: 3.2rem;
             cursor: pointer;
             @include breakpoint(pc) {
                 display: none;
