@@ -390,6 +390,9 @@ main {
         font-size: 3.6rem;
         font-family: "M+ 1m";
         padding: 9.1rem 0 9.1rem 2.6rem;
+        @include breakpoint(tablet) {
+            padding-top: 20.8rem;
+        }
     }
     .l-single_mainbg {
         background-color: #fffdfa;
@@ -587,6 +590,18 @@ main {
         }
         .c-bold {
             padding-bottom: 7.1rem;
+        }
+    }
+    /*以下pageのcss*/
+    .l-page-hero {
+        background-image: url(/images/page_hero_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 100%;
+        height: 22.5rem;
+        position: relative;
+        @include breakpoint(tablet) {
+            height: 50rem;
         }
     }
 }

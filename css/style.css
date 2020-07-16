@@ -521,6 +521,7 @@ main {
   /*以下archiveのcss*/
   /*ページフィード*/
   /*以下singleのcss*/
+  /*以下pageのcss*/
 }
 
 @media (min-width: 769px) {
@@ -1157,6 +1158,17 @@ main .l-single-main_title {
   font-size: 3.6rem;
   font-family: "M+ 1m";
   padding: 9.1rem 0 9.1rem 2.6rem;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-single-main_title {
+    padding-top: 20.8rem;
+  }
 }
 
 main .l-single_mainbg {
@@ -1500,6 +1512,26 @@ main .l-single_main .c-single_btn {
 
 main .l-single_main .c-bold {
   padding-bottom: 7.1rem;
+}
+
+main .l-page-hero {
+  background-image: url(/images/page_hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 22.5rem;
+  position: relative;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-page-hero {
+    height: 50rem;
+  }
 }
 
 footer {
