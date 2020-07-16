@@ -1581,6 +1581,10 @@ footer p {
   padding-top: 3.5rem;
 }
 
+sidebar {
+  /*JSでsidebar開いた状態*/
+}
+
 sidebar .l-sidebar_wrapper {
   /*これがクリック時に表示される*/
   color: #707070;
@@ -1599,13 +1603,8 @@ sidebar .l-sidebar_wrapper {
             @content ;
         }
     }*/
-  /*.l-show {
-            transform: translate3d(-350, 0, 0);
-        }
-        .l-sidebar .is-open {
-            left: 10%;
-            overflow-y: scroll;
-        }*/
+  /*JSでsidebar開いた状態*/
+  /*JSでsidebar開いた状態*/
 }
 
 @media (min-width: 769px) {
@@ -1633,6 +1632,10 @@ sidebar .l-sidebar_wrapper .l-sidebar_title {
   }
 }
 
+sidebar .l-sidebar_wrapper .l-sidebar_title.is-open {
+  display: none;
+}
+
 sidebar .l-sidebar_wrapper .l-menu_cancel_btn {
   float: left;
   position: relative;
@@ -1652,6 +1655,10 @@ sidebar .l-sidebar_wrapper .l-menu_cancel_btn {
   sidebar .l-sidebar_wrapper .l-menu_cancel_btn {
     display: none;
   }
+}
+
+sidebar .l-sidebar_wrapper .is-open {
+  display: block;
 }
 
 sidebar .l-sidebar_wrapper .l-menu_list {
@@ -1689,6 +1696,33 @@ sidebar .l-sidebar_wrapper .l-drink {
   margin-bottom: 4rem;
 }
 
+sidebar .is-open {
+  right: 0rem;
+  position: absolute;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  sidebar .is-open {
+    width: 50%;
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  }
+}
+
+@media (min-width: 641px) and (min-width: 769px) {
+  sidebar .is-open {
+    display: block;
+  }
+}
+
 .pageContainer {
   position: relative;
   min-height: 100%;
@@ -1709,5 +1743,9 @@ sidebar .l-sidebar_wrapper .l-drink {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
   display: none;
+}
+
+body.is-open {
+  position: fixed;
 }
 /*# sourceMappingURL=style.css.map */

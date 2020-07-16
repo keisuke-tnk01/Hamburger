@@ -12,7 +12,6 @@ sidebar {
         top: 0;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
-
         @include breakpoint(pc) {
             width: 19.3%;
             float: right;
@@ -27,6 +26,10 @@ sidebar {
                 display: block;
             }
         }
+        /*JSでsidebar開いた状態*/
+        .l-sidebar_title.is-open {
+            display: none;
+        }
 
         .l-menu_cancel_btn {
             float: left;
@@ -40,6 +43,11 @@ sidebar {
                 display: none;
             }
         }
+        /*JSでsidebar開いた状態*/
+        .is-open {
+            display: block;
+        }
+
         .l-menu_list {
             padding-top: 21.2rem;
         }
@@ -72,13 +80,16 @@ sidebar {
         .l-drink {
             margin-bottom: 4rem;
         }
-        /*.l-show {
-            transform: translate3d(-350, 0, 0);
+    }
+    /*JSでsidebar開いた状態*/
+    .is-open {
+        right: 0rem;
+        position: absolute;
+        @include breakpoint(tablet) {
+            width: 50%;
+            @include breakpoint(pc) {
+                display: block;
+            }
         }
-        .l-sidebar .is-open {
-            left: 10%;
-            overflow-y: scroll;
-        }*/
-
     }
 }
