@@ -1459,11 +1459,34 @@ main .l-single_main .l-wrapper_grid .l-single_big_imageframe {
 }
 
 main .l-single_main .l-single_list1 {
-  margin-bottom: 6rem;
+  margin: 3rem 0 6rem 2rem;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  main .l-single_main .l-single_list1 {
+    margin-top: 6rem;
+  }
+}
+
+main .l-single_main .l-single_list2 {
+  margin: 3rem 0 6rem auto;
+}
+
+main .l-single_main .l-single_list2 .l-list_item {
+  list-style-type: none;
 }
 
 main .l-single_main .l-list_item {
   margin-bottom: 3rem;
+}
+
+main .l-single_main .l-list_middle {
+  margin-left: 3.8rem;
 }
 
 main .l-single_main .l-html_container {

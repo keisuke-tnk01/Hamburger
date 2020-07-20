@@ -478,7 +478,6 @@ main {
             margin-top: 0;
         }
 
-
         .c-single__card__img {
             width: 42.7%;
             height: 8.9rem;
@@ -546,11 +545,25 @@ main {
             }
         }
         .l-single_list1 {
-            margin-bottom: 6rem;
+            margin: 3rem 0 6rem 2rem;
+            @include breakpoint(tablet) {
+                margin-top: 6rem;
+            }
+        }
+        .l-single_list2 {
+            margin: 3rem 0 6rem auto;
+            .l-list_item {
+                list-style-type: none;
+            }
         }
         .l-list_item {
             margin-bottom: 3rem;
         }
+
+        .l-list_middle {
+            margin-left: 3.8rem;
+        }
+
         .l-html_container {
             background-color: #f5f5f5;
             width: 100%;
