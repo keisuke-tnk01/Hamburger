@@ -11,7 +11,7 @@ header {
         float: left;
     }
 
-    .l-menu {
+    .c-menu {
         float: right;
         font-size: 2rem;
         margin: 1.4rem 1.6rem 0 0;
@@ -22,7 +22,7 @@ header {
         }
     }
 
-    .l-site_title {
+    .c-site_title {
         font-size: 4rem;
         text-align: center;
         padding-top: 4rem;
@@ -33,7 +33,7 @@ header {
         }
     }
 
-    .l-searchform {
+    .p-search__form {
         line-height: 4.6rem;
         margin-top: 3.8rem;
         text-align: center;
@@ -47,7 +47,7 @@ header {
         }
     }
 
-    .l-searchtext {
+    .c-search__text {
         -webkit-appearance: none;
         display: inline-block;
         box-sizing: border-box;

@@ -1,5 +1,5 @@
 sidebar {
-    .l-sidebar_wrapper {
+    .p-sidebar_wrapper {
         color: #707070;
         background-color: #fff7ef;
         width: 32.8rem;
@@ -17,18 +17,18 @@ sidebar {
             display: block;
         }
 
-        .l-sidebar_title {
+        .c-sidebar_title {
             display: none;
             @include breakpoint(pc) {
                 display: block;
             }
         }
         /*JSでsidebar開いた状態*/
-        .l-sidebar_title.is-open {
+        .c-sidebar_title.is-open {
             display: none;
         }
 
-        .l-menu_cancel_btn {
+        .c-menu_cancel_btn {
             float: left;
             position: relative;
             top: 2.5rem;
@@ -45,7 +45,7 @@ sidebar {
             display: block;
         }
 
-        .l-menu_list {
+        .c-menu_list {
             padding-top: 21.2rem;
         }
         h2 {
@@ -72,9 +72,9 @@ sidebar {
             position: relative;
             left: 6.6rem;
         }
-        .l-burger,
-        .l-side,
-        .l-drink {
+        .c-burger,
+        .c-side,
+        .c-drink {
             margin-bottom: 4rem;
         }
     }
