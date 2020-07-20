@@ -355,12 +355,18 @@ img {
   margin: auto;
 }
 
-html body {
+html,
+body {
   height: 100%;
   width: 100%;
   max-width: 100%;
   min-width: 320px;
   margin: auto;
+}
+
+.is-open {
+  position: fixed;
+  /*JSでsidebar開いたときに背景を固定させる*/
 }
 
 header {
@@ -1582,11 +1588,10 @@ footer p {
 }
 
 sidebar {
-  /*JSでsidebar開いた状態*/
+  /*JSでsidebar開いた状態を作る*/
 }
 
 sidebar .l-sidebar_wrapper {
-  /*これがクリック時に表示される*/
   color: #707070;
   background-color: #fff7ef;
   width: 32.8rem;
@@ -1596,15 +1601,13 @@ sidebar .l-sidebar_wrapper {
   padding-bottom: 5000px;
   margin-bottom: -5000px;
   top: 0;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
         }
     }*/
   /*JSでsidebar開いた状態*/
-  /*JSでsidebar開いた状態*/
+  /*JSでsidebar開いた状態でキャンセルボタン常時表示*/
 }
 
 @media (min-width: 769px) {
@@ -1697,8 +1700,15 @@ sidebar .l-sidebar_wrapper .l-drink {
 }
 
 sidebar .is-open {
+  overflow: scroll;
+  /*JSでsidebar開いたときにsidebarだけスクロールさせる*/
+  height: 100vh;
+  /*overflowを機能させるためにブラウザの高さいっぱいを指定*/
+  -webkit-overflow-scrolling: touch;
+  /*慣性スクロールが効くのでスムーズとなる？*/
   right: 0rem;
   position: absolute;
+  /*JSでsidebar開いた状態をレスポンシブ対応*/
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
@@ -1743,9 +1753,5 @@ sidebar .is-open {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
   display: none;
-}
-
-body.is-open {
-  position: fixed;
 }
 /*# sourceMappingURL=style.css.map */
