@@ -1,4 +1,4 @@
-main {
+.l-main {
     overflow: hidden;
     opacity: 1;
 
@@ -72,7 +72,7 @@ main {
             padding: 0 1.4rem 2rem 1rem;
         }
 
-        .p-takeout {
+        .p-takeOut__container {
             background-image: url(/images/takeout_bg.jpg);
             background-repeat: no-repeat;
             background-position: center center;
@@ -87,7 +87,7 @@ main {
             }
         }
 
-        .p-eatin {
+        .p-eatIn__container {
             background-image: url(/images/eatin_bg.jpg);
             background-repeat: no-repeat;
             background-position: center center;
@@ -187,7 +187,7 @@ main {
     }
 
     /*以下archiveのcss*/
-    .l-archive-top {
+    .p-archive__hero {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/archive_top_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -195,23 +195,23 @@ main {
         height: auto;
         position: relative;
     }
-    .l-archive-main_title {
+    .c-archive__main__title {
         color: #fff;
         font-size: 3.6rem;
         font-family: "M+ 1m";
         padding: 11.9rem 0 0 3.7rem;
     }
-    .l-archive-main_menu {
+    .c-archive__main__menu {
         color: #fff;
         font-size: 1.6rem;
         font-family: "M+ 1m";
         padding: 0 0 11.5rem 3.7rem;
     }
-    .l-archive_main {
+    .p-archive__main {
         background-color: #fffdfa;
         padding-top: 11.5rem;
     }
-    .l-archive-container {
+    .p-archive__container {
         h3 {
             font-size: 2.8rem;
             margin: 3rem 0 3.2rem 2.2rem;
@@ -229,7 +229,7 @@ main {
         }
     }
 
-    .l-archive_card {
+    .c-card__container {
         text-align: center;
         width: 89.5%;
         height: 58.5rem;
@@ -247,7 +247,7 @@ main {
             }
         }
     }
-    .l-card_imageframe {
+    .c-card__imgframe {
         height: 23rem;
         width: 100%;
         background-image: url(/images/archive_card_img.jpg);
@@ -267,7 +267,7 @@ main {
             }
         }
     }
-    .l-card_contents {
+    .p-card__contents {
         background-color: #3c2b1c;
         color: #fff;
         height: 35.5rem;
@@ -281,12 +281,12 @@ main {
                 height: 47.1rem;
             }
         }
-        h2 {
+        .c-card__title {
             padding-top: 3.05rem;
             padding-bottom: 2.5rem;
             font-size: 2rem;
         }
-        .l-card_text {
+        .c-card__text {
             font-size: 1.6rem;
             h3 {
                 padding-bottom: 1.1rem;
@@ -304,7 +304,7 @@ main {
                 }
             }
         }
-        .l-card_btn {
+        .c-card__btn {
             -webkit-appearance: none;
             border-radius: 5rem;
             width: 16.3rem;
@@ -320,7 +320,7 @@ main {
         }
     }
     /*ページフィード*/
-    .l-pagenation {
+    .p-pagenation {
         display: flex;
         font-family: Roboto;
         font-size: 1.6rem;
@@ -336,31 +336,31 @@ main {
             }
         }
     }
-    .l-page_view {
+    .c-page__view {
         display: none;
         @include breakpoint( tablet ) {
             display: block;
             margin-right: 1.9rem;
         }
     }
-    .l-page_logo {
+    .c-page__logo {
         @include breakpoint( tablet ) {
             margin-right: 0rem;
             margin-left: 0rem;
         }
     }
-    .l-page_comment {
+    .c-page__word {
         margin: 0.82rem;
         @include breakpoint( tablet ) {
             display: none;
         }
     }
-    .l-page_container {
+    .c-page__container {
         display: none;
         @include breakpoint( tablet ) {
             display: block;
         }
-        .l-page_number {
+        .c-page_number {
             display: flex;
             background-color: #fff;
             text-decoration: none;

@@ -24,18 +24,15 @@
 @import "layout/_footer.scss";
 @import "layout/_sidebar.scss";
 
-.pageContainer {
+.u-body__wrrapper {
   position: relative;
   min-height: 100%;
   overflow: hidden;
 }
 
-.document-wrapper {
-  overflow: hidden;
-}
 
 /*jQueryサイドバー表示の黒透過*/
-.c-open_menu-wrapper {
+.u-open__menu__wrapper {
   position: fixed;
   top: 0;
   right: 0;

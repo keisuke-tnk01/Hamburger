@@ -369,7 +369,7 @@ body {
   /*JSでsidebar開いたときに背景を固定させる*/
 }
 
-header {
+.l-header {
   overflow: hidden;
   height: 217px;
   background-color: #fff7ef;
@@ -385,13 +385,13 @@ header {
 }
 
 @media (min-width: 769px) {
-  header {
+  .l-header {
     width: 80.7%;
     float: left;
   }
 }
 
-header .c-menu {
+.l-header .c-header__menu {
   float: right;
   font-size: 2rem;
   margin: 1.4rem 1.6rem 0 0;
@@ -405,12 +405,12 @@ header .c-menu {
 }
 
 @media (min-width: 769px) {
-  header .c-menu {
+  .l-header .c-header__menu {
     display: none;
   }
 }
 
-header .c-site_title {
+.l-header .c-site__title {
   font-size: 4rem;
   text-align: center;
   padding-top: 4rem;
@@ -422,14 +422,14 @@ header .c-site_title {
 }
 
 @media (min-width: 769px) {
-  header .c-site_title {
+  .l-header .c-site__title {
     margin-top: 5rem;
     margin-left: 6.5rem;
     display: inline-block;
   }
 }
 
-header .p-search__form {
+.l-header .p-search__form {
   line-height: 4.6rem;
   margin-top: 3.8rem;
   text-align: center;
@@ -442,7 +442,7 @@ header .p-search__form {
 }
 
 @media (min-width: 769px) {
-  header .p-search__form {
+  .l-header .p-search__form {
     float: right;
     display: inline-block;
     margin-top: 8.6rem;
@@ -450,7 +450,7 @@ header .p-search__form {
   }
 }
 
-header .c-search__text {
+.l-header .c-search__text {
   -webkit-appearance: none;
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -479,18 +479,18 @@ header .c-search__text {
 }
 
 @media (min-width: 641px) {
-  header .c-search__text {
+  .l-header .c-search__text {
     width: 47.5%;
   }
 }
 
 @media (min-width: 769px) {
-  header .c-search__text {
+  .l-header .c-search__text {
     width: 25.4vw;
   }
 }
 
-header label {
+.l-header label {
   -webkit-appearance: none;
   display: inline-block;
   border-radius: 0.8rem;
@@ -511,12 +511,12 @@ header label {
 }
 
 @media (min-width: 641px) {
-  header label {
+  .l-header label {
     padding: 0 5.4rem 0 5.4rem;
   }
 }
 
-main {
+.l-main {
   overflow: hidden;
   opacity: 1;
   /*@if $point == wide {
@@ -531,13 +531,13 @@ main {
 }
 
 @media (min-width: 769px) {
-  main {
+  .l-main {
     width: 80.7%;
     float: left;
   }
 }
 
-main .p-page__hero {
+.l-main .p-page__hero {
   background-image: url(/images/top_bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -554,7 +554,7 @@ main .p-page__hero {
 }
 
 @media (min-width: 641px) {
-  main .p-page__hero {
+  .l-main .p-page__hero {
     background-image: url(/images/top_tablet_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -568,7 +568,7 @@ main .p-page__hero {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .p-page__hero {
+  .l-main .p-page__hero {
     background-image: url(/images/top_pc_bg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -576,14 +576,14 @@ main .p-page__hero {
   }
 }
 
-main .p-page__hero .c-main__title {
+.l-main .p-page__hero .c-main__title {
   color: #fff;
   font-size: 3.6rem;
   font-family: "M+ 1m";
   padding: 11.9rem 0px 11.8rem 2.5rem;
 }
 
-main .p-main__container {
+.l-main .p-main__container {
   /*レスポンシブ　tablet PC*/
   /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -593,14 +593,14 @@ main .p-main__container {
 }
 
 @media (min-width: 641px) {
-  main .p-main__container {
+  .l-main .p-main__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-main .p-main__container h2 {
+.l-main .p-main__container h2 {
   color: #fff;
   font-size: 4.1rem;
   font-family: Roboto;
@@ -608,7 +608,7 @@ main .p-main__container h2 {
   position: relative;
 }
 
-main .p-main__container h2::after {
+.l-main .p-main__container h2::after {
   content: "";
   position: absolute;
   left: 1.2rem;
@@ -622,19 +622,19 @@ main .p-main__container h2::after {
   /*線の色*/
 }
 
-main .p-main__container h3 {
+.l-main .p-main__container h3 {
   font-size: 2.2rem;
   font-family: "M+ 1m";
   padding: 1.9rem 0 2.1rem 1rem;
 }
 
-main .p-main__container p {
+.l-main .p-main__container p {
   font-size: 1.6rem;
   line-height: 3.69rem;
   padding: 0 1.4rem 2rem 1rem;
 }
 
-main .p-main__container .p-takeout {
+.l-main .p-main__container .p-takeOut__container {
   background-image: url(/images/takeout_bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -651,13 +651,13 @@ main .p-main__container .p-takeout {
 }
 
 @media (min-width: 641px) {
-  main .p-main__container .p-takeout {
+  .l-main .p-main__container .p-takeOut__container {
     margin-left: 4rem;
     margin-right: 2rem;
   }
 }
 
-main .p-main__container .p-eatin {
+.l-main .p-main__container .p-eatIn__container {
   background-image: url(/images/eatin_bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -674,22 +674,22 @@ main .p-main__container .p-eatin {
 }
 
 @media (min-width: 641px) {
-  main .p-main__container .p-eatin {
+  .l-main .p-main__container .p-eatIn__container {
     margin-left: 2rem;
     margin-right: 4rem;
   }
 }
 
-main .p-main__container .c-content1 {
+.l-main .p-main__container .c-content1 {
   margin: 22rem 1rem 1rem 1rem;
 }
 
-main .p-main__container .c-content2 {
+.l-main .p-main__container .c-content2 {
   margin: 0.9rem 1rem 1rem 1rem;
 }
 
-main .p-main__container .c-content1,
-main .p-main__container .c-content2 {
+.l-main .p-main__container .c-content1,
+.l-main .p-main__container .c-content2 {
   width: 94%;
   height: 16.3rem;
   background-color: #fff;
@@ -698,7 +698,7 @@ main .p-main__container .c-content2 {
   line-height: 3.7rem;
 }
 
-main .p-map {
+.l-main .p-map {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/map_bg.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_bg.jpg);
   /*map画像にカラーフィルター黒*/
@@ -719,7 +719,7 @@ main .p-map {
 }
 
 @media (min-width: 641px) {
-  main .p-map {
+  .l-main .p-map {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/map_tablet_bg.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_tablet_bg.jpg);
     /*map画像にカラーフィルター黒*/
@@ -736,7 +736,7 @@ main .p-map {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .p-map {
+  .l-main .p-map {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/map_pc_bg.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_pc_bg.jpg);
     /*map画像にカラーフィルター黒*/
@@ -746,7 +746,7 @@ main .p-map {
   }
 }
 
-main .p-map .c-map__comment {
+.l-main .p-map .c-map__comment {
   background-color: #000000;
   opacity: 0.8;
   color: #fff;
@@ -761,7 +761,7 @@ main .p-map .c-map__comment {
 }
 
 @media (min-width: 641px) {
-  main .p-map .c-map__comment {
+  .l-main .p-map .c-map__comment {
     width: 100%;
     height: 100%;
     /*レスポンシブ　PC*/
@@ -774,21 +774,21 @@ main .p-map .c-map__comment {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .p-map .c-map__comment {
+  .l-main .p-map .c-map__comment {
     width: 50%;
     height: 100%;
     float: left;
   }
 }
 
-main .p-map h2 {
+.l-main .p-map h2 {
   font-size: 3rem;
   height: 12rem;
   padding: 4rem 0 2rem 4rem;
   position: relative;
 }
 
-main .p-map h2::after {
+.l-main .p-map h2::after {
   content: "";
   position: absolute;
   top: 10rem;
@@ -803,14 +803,14 @@ main .p-map h2::after {
   /*線の色*/
 }
 
-main .p-map p {
+.l-main .p-map p {
   font-size: 1.4rem;
   height: 29.5rem;
   padding: 0 4rem 5.1rem 4rem;
   line-height: 4.7rem;
 }
 
-main .l-archive-top {
+.l-main .p-archive__hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/images/archive_top_bg.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/archive_top_bg.jpg);
   background-repeat: no-repeat;
@@ -820,31 +820,31 @@ main .l-archive-top {
   position: relative;
 }
 
-main .l-archive-main_title {
+.l-main .c-archive__main__title {
   color: #fff;
   font-size: 3.6rem;
   font-family: "M+ 1m";
   padding: 11.9rem 0 0 3.7rem;
 }
 
-main .l-archive-main_menu {
+.l-main .c-archive__main__menu {
   color: #fff;
   font-size: 1.6rem;
   font-family: "M+ 1m";
   padding: 0 0 11.5rem 3.7rem;
 }
 
-main .l-archive_main {
+.l-main .p-archive__main {
   background-color: #fffdfa;
   padding-top: 11.5rem;
 }
 
-main .l-archive-container h3 {
+.l-main .p-archive__container h3 {
   font-size: 2.8rem;
   margin: 3rem 0 3.2rem 2.2rem;
 }
 
-main .l-archive-container p {
+.l-main .p-archive__container p {
   font-size: 1.6rem;
   line-height: 3.7rem;
   margin-left: 2.2rem;
@@ -859,12 +859,12 @@ main .l-archive-container p {
 }
 
 @media (min-width: 641px) {
-  main .l-archive-container p {
+  .l-main .p-archive__container p {
     height: 14.3rem;
   }
 }
 
-main .l-archive_card {
+.l-main .c-card__container {
   text-align: center;
   width: 89.5%;
   height: 58.5rem;
@@ -880,7 +880,7 @@ main .l-archive_card {
 }
 
 @media (min-width: 641px) {
-  main .l-archive_card {
+  .l-main .c-card__container {
     height: 35.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -893,14 +893,14 @@ main .l-archive_card {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .l-archive_card {
+  .l-main .c-card__container {
     height: 47.1rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
   }
 }
 
-main .l-card_imageframe {
+.l-main .c-card__imgframe {
   height: 23rem;
   width: 100%;
   background-image: url(/images/archive_card_img.jpg);
@@ -919,7 +919,7 @@ main .l-card_imageframe {
 }
 
 @media (min-width: 641px) {
-  main .l-card_imageframe {
+  .l-main .c-card__imgframe {
     background-image: url(/images/archive_card_tablet_img.jpg);
     float: left;
     width: 50%;
@@ -933,13 +933,13 @@ main .l-card_imageframe {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .l-card_imageframe {
+  .l-main .c-card__imgframe {
     background-image: url(/images/archive_card_pc_img.jpg);
     height: 47.1rem;
   }
 }
 
-main .l-card_contents {
+.l-main .p-card__contents {
   background-color: #3c2b1c;
   color: #fff;
   height: 35.5rem;
@@ -955,7 +955,7 @@ main .l-card_contents {
 }
 
 @media (min-width: 641px) {
-  main .l-card_contents {
+  .l-main .p-card__contents {
     float: right;
     width: 50%;
     /*@if $point == wide {
@@ -967,26 +967,26 @@ main .l-card_contents {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .l-card_contents {
+  .l-main .p-card__contents {
     height: 47.1rem;
   }
 }
 
-main .l-card_contents h2 {
+.l-main .p-card__contents .c-card__title {
   padding-top: 3.05rem;
   padding-bottom: 2.5rem;
   font-size: 2rem;
 }
 
-main .l-card_contents .l-card_text {
+.l-main .p-card__contents .c-card__text {
   font-size: 1.6rem;
 }
 
-main .l-card_contents .l-card_text h3 {
+.l-main .p-card__contents .c-card__text h3 {
   padding-bottom: 1.1rem;
 }
 
-main .l-card_contents .l-card_text p {
+.l-main .p-card__contents .c-card__text p {
   padding-right: 7.3rem;
   height: 11.4rem;
   line-height: 3.7rem;
@@ -999,7 +999,7 @@ main .l-card_contents .l-card_text p {
 }
 
 @media (min-width: 641px) {
-  main .l-card_contents .l-card_text p {
+  .l-main .p-card__contents .c-card__text p {
     padding-right: 5.9rem;
     /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1010,12 +1010,12 @@ main .l-card_contents .l-card_text p {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .l-card_contents .l-card_text p {
+  .l-main .p-card__contents .c-card__text p {
     padding-right: 10.4rem;
   }
 }
 
-main .l-card_contents .l-card_btn {
+.l-main .p-card__contents .c-card__btn {
   -webkit-appearance: none;
   border-radius: 5rem;
   width: 16.3rem;
@@ -1030,7 +1030,7 @@ main .l-card_contents .l-card_btn {
   margin-top: 4rem;
 }
 
-main .l-pagenation {
+.l-main .p-pagenation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1047,7 +1047,7 @@ main .l-pagenation {
 }
 
 @media (min-width: 641px) {
-  main .l-pagenation {
+  .l-main .p-pagenation {
     width: 70rem;
     padding-top: 10.5rem;
     /*@if $point == wide {
@@ -1059,13 +1059,13 @@ main .l-pagenation {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .l-pagenation {
+  .l-main .p-pagenation {
     padding-top: 15rem;
     padding-bottom: 6.4rem;
   }
 }
 
-main .l-page_view {
+.l-main .c-page__view {
   display: none;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1075,13 +1075,13 @@ main .l-page_view {
 }
 
 @media (min-width: 641px) {
-  main .l-page_view {
+  .l-main .c-page__view {
     display: block;
     margin-right: 1.9rem;
   }
 }
 
-main .l-page_logo {
+.l-main .c-page__logo {
   /*@if $point == wide {
         @media ( min-width: 961px ) {
             @content ;
@@ -1090,13 +1090,13 @@ main .l-page_logo {
 }
 
 @media (min-width: 641px) {
-  main .l-page_logo {
+  .l-main .c-page__logo {
     margin-right: 0rem;
     margin-left: 0rem;
   }
 }
 
-main .l-page_comment {
+.l-main .c-page__word {
   margin: 0.82rem;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1106,12 +1106,12 @@ main .l-page_comment {
 }
 
 @media (min-width: 641px) {
-  main .l-page_comment {
+  .l-main .c-page__word {
     display: none;
   }
 }
 
-main .l-page_container {
+.l-main .c-page__container {
   display: none;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1121,12 +1121,12 @@ main .l-page_container {
 }
 
 @media (min-width: 641px) {
-  main .l-page_container {
+  .l-main .c-page__container {
     display: block;
   }
 }
 
-main .l-page_container .l-page_number {
+.l-main .c-page__container .c-page_number {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1139,7 +1139,7 @@ main .l-page_container .l-page_number {
   margin: 0.75rem;
 }
 
-main .p-single__hero {
+.l-main .p-single__hero {
   background-image: url(/images/single_top_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1154,12 +1154,12 @@ main .p-single__hero {
 }
 
 @media (min-width: 641px) {
-  main .p-single__hero {
+  .l-main .p-single__hero {
     height: 50rem;
   }
 }
 
-main .c-single__main__title {
+.l-main .c-single__main__title {
   color: #fff;
   font-size: 3.6rem;
   font-family: "M+ 1m";
@@ -1172,16 +1172,16 @@ main .c-single__main__title {
 }
 
 @media (min-width: 641px) {
-  main .c-single__main__title {
+  .l-main .c-single__main__title {
     padding-top: 20.8rem;
   }
 }
 
-main .p-single-page__mainbg {
+.l-main .p-single-page__mainbg {
   background-color: #fffdfa;
 }
 
-main .p-single-page__main {
+.l-main .p-single-page__main {
   background-color: #fffdfa;
   padding-top: 3rem;
   width: 89.3%;
@@ -1193,7 +1193,7 @@ main .p-single-page__main {
 }
 
 @media (min-width: 641px) {
-  main .p-single-page__main {
+  .l-main .p-single-page__main {
     width: 85.6%;
     /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1204,53 +1204,53 @@ main .p-single-page__main {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .p-single-page__main {
+  .l-main .p-single-page__main {
     width: 87.1%;
   }
 }
 
-main .p-single-page__main .p-single-page__topics h2 {
+.l-main .p-single-page__main .p-single-page__topics h2 {
   margin-bottom: 3.2rem;
   font-size: 3.6rem;
 }
 
-main .p-single-page__main .p-single-page__topics p {
+.l-main .p-single-page__main .p-single-page__topics p {
   height: 18.3rem;
   font-size: 1.6rem;
   margin-bottom: 3.4rem;
 }
 
-main .p-single-page__main .p-single-page__topics h3,
-main .p-single-page__main .p-single-page__topics h4,
-main .p-single-page__main .p-single-page__topics h5,
-main .p-single-page__main .p-single-page__topics h6 {
+.l-main .p-single-page__main .p-single-page__topics h3,
+.l-main .p-single-page__main .p-single-page__topics h4,
+.l-main .p-single-page__main .p-single-page__topics h5,
+.l-main .p-single-page__main .p-single-page__topics h6 {
   margin-bottom: 6rem;
   font-size: 2rem;
 }
 
-main .p-single-page__main .p-single-page__article {
+.l-main .p-single-page__main .p-single-page__article {
   font-size: 1.6rem;
   color: #3c2a10;
 }
 
-main .p-single-page__main .c-single-page__blockquote {
+.l-main .p-single-page__main .c-single-page__blockquote {
   background-color: #f5f5f5;
   height: 61.7rem;
   font-family: "M+ 1m";
   margin-bottom: 3rem;
 }
 
-main .p-single-page__main .c-single-page__blockquote .c-single-page__blockquote__txt {
+.l-main .p-single-page__main .c-single-page__blockquote .c-single-page__blockquote__txt {
   width: 85.6%;
   padding-top: 3rem;
 }
 
-main .p-single-page__main .c-single-page__blockquote .c-single-page__blockquote__txt .c-quote__txt1 {
+.l-main .p-single-page__main .c-single-page__blockquote .c-single-page__blockquote__txt .c-quote__txt1 {
   height: 50.5rem;
   margin-bottom: 3rem;
 }
 
-main .p-single-page__main .c-single-page__wide__imgframe {
+.l-main .p-single-page__main .c-single-page__wide__imgframe {
   background-image: url(/images/single_img_wide.jpg);
   height: 12.4rem;
   width: 100%;
@@ -1270,7 +1270,7 @@ main .p-single-page__main .c-single-page__wide__imgframe {
 }
 
 @media (min-width: 641px) {
-  main .p-single-page__main .c-single-page__wide__imgframe {
+  .l-main .p-single-page__main .c-single-page__wide__imgframe {
     height: 26.4rem;
     /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1281,12 +1281,12 @@ main .p-single-page__main .c-single-page__wide__imgframe {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .p-single-page__main .c-single-page__wide__imgframe {
+  .l-main .p-single-page__main .c-single-page__wide__imgframe {
     height: 50rem;
   }
 }
 
-main .p-single-page__main .c-single-page__card__container1 {
+.l-main .p-single-page__main .c-single-page__card__container1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1298,7 +1298,7 @@ main .p-single-page__main .c-single-page__card__container1 {
   width: 100%;
 }
 
-main .p-single-page__main .c-single-page__card__container2 {
+.l-main .p-single-page__main .c-single-page__card__container2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1310,12 +1310,12 @@ main .p-single-page__main .c-single-page__card__container2 {
   width: 100%;
 }
 
-main .p-single-page__main .c-single-page__card__txt {
+.l-main .p-single-page__main .c-single-page__card__txt {
   width: 54.3%;
   margin-top: 0;
 }
 
-main .p-single-page__main .c-single-page__card__img {
+.l-main .p-single-page__main .c-single-page__card__img {
   width: 42.7%;
   height: 8.9rem;
   margin-top: 0rem;
@@ -1333,7 +1333,7 @@ main .p-single-page__main .c-single-page__card__img {
 }
 
 @media (min-width: 641px) {
-  main .p-single-page__main .c-single-page__card__img {
+  .l-main .p-single-page__main .c-single-page__card__img {
     height: 18.9rem;
     /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1344,12 +1344,12 @@ main .p-single-page__main .c-single-page__card__img {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .p-single-page__main .c-single-page__card__img {
+  .l-main .p-single-page__main .c-single-page__card__img {
     height: 35.8rem;
   }
 }
 
-main .p-single-page__main .c-single-page__middle__imgframe {
+.l-main .p-single-page__main .c-single-page__middle__imgframe {
   background-image: url(/images/single_img.jpg);
   height: 16.6rem;
   width: 79.7%;
@@ -1369,7 +1369,7 @@ main .p-single-page__main .c-single-page__middle__imgframe {
 }
 
 @media (min-width: 641px) {
-  main .p-single-page__main .c-single-page__middle__imgframe {
+  .l-main .p-single-page__main .c-single-page__middle__imgframe {
     width: 81.3%;
     height: 35.8rem;
     /*@if $point == wide {
@@ -1381,13 +1381,13 @@ main .p-single-page__main .c-single-page__middle__imgframe {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .p-single-page__main .c-single-page__middle__imgframe {
+  .l-main .p-single-page__main .c-single-page__middle__imgframe {
     width: 58.1rem;
     height: 35.8rem;
   }
 }
 
-main .p-single-page__main .c-single-page__grid {
+.l-main .p-single-page__main .c-single-page__grid {
   display: -ms-grid;
   display: grid;
   gap: 3rem;
@@ -1401,7 +1401,7 @@ main .p-single-page__main .c-single-page__grid {
 }
 
 @media (min-width: 641px) {
-  main .p-single-page__main .c-single-page__grid {
+  .l-main .p-single-page__main .c-single-page__grid {
     display: -ms-grid;
     display: grid;
     gap: 1.6rem;
@@ -1416,14 +1416,14 @@ main .p-single-page__main .c-single-page__grid {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .p-single-page__main .c-single-page__grid {
+  .l-main .p-single-page__main .c-single-page__grid {
     gap: 2rem;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-main .p-single-page__main .c-single-page__grid .c-single-page__big__imgframe {
+.l-main .p-single-page__main .c-single-page__grid .c-single-page__big__imgframe {
   background-image: url(/images/single_img.jpg);
   height: 20.5rem;
   width: 100%;
@@ -1442,7 +1442,7 @@ main .p-single-page__main .c-single-page__grid .c-single-page__big__imgframe {
 }
 
 @media (min-width: 641px) {
-  main .p-single-page__main .c-single-page__grid .c-single-page__big__imgframe {
+  .l-main .p-single-page__main .c-single-page__grid .c-single-page__big__imgframe {
     height: 20.5rem;
     /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1453,12 +1453,12 @@ main .p-single-page__main .c-single-page__grid .c-single-page__big__imgframe {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  main .p-single-page__main .c-single-page__grid .c-single-page__big__imgframe {
+  .l-main .p-single-page__main .c-single-page__grid .c-single-page__big__imgframe {
     height: 25.7rem;
   }
 }
 
-main .p-single-page__main .c-single-page__list1 {
+.l-main .p-single-page__main .c-single-page__list1 {
   margin: 3rem 0 6rem 2rem;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1468,28 +1468,28 @@ main .p-single-page__main .c-single-page__list1 {
 }
 
 @media (min-width: 641px) {
-  main .p-single-page__main .c-single-page__list1 {
+  .l-main .p-single-page__main .c-single-page__list1 {
     margin-top: 6rem;
   }
 }
 
-main .p-single-page__main .c-single-page__list2 {
+.l-main .p-single-page__main .c-single-page__list2 {
   margin: 3rem 0 6rem auto;
 }
 
-main .p-single-page__main .c-single-page__list2 .c-list__item {
+.l-main .p-single-page__main .c-single-page__list2 .c-list__item {
   list-style-type: none;
 }
 
-main .p-single-page__main .c-list__item {
+.l-main .p-single-page__main .c-list__item {
   margin-bottom: 3rem;
 }
 
-main .p-single-page__main .c-list_middle {
+.l-main .p-single-page__main .c-list_middle {
   margin-left: 3.8rem;
 }
 
-main .p-single-page__main .c-single-page__html__container {
+.l-main .p-single-page__main .c-single-page__html__container {
   background-color: #f5f5f5;
   width: 100%;
   height: 23.7rem;
@@ -1498,8 +1498,8 @@ main .p-single-page__main .c-single-page__html__container {
   margin-bottom: 3rem;
 }
 
-main .p-single-page__main table,
-main .p-single-page__main td {
+.l-main .p-single-page__main table,
+.l-main .p-single-page__main td {
   background-color: #ffffff;
   border: solid 0.1rem #707070;
   border-collapse: collapse;
@@ -1509,15 +1509,15 @@ main .p-single-page__main td {
   width: 100%;
 }
 
-main .p-single-page__main .c-td1 {
+.l-main .p-single-page__main .c-td1 {
   width: 40%;
 }
 
-main .p-single-page__main .c-td2 {
+.l-main .p-single-page__main .c-td2 {
   width: 60%;
 }
 
-main .p-single-page__main .c-single-page__btn {
+.l-main .p-single-page__main .c-single-page__btn {
   text-align: center;
   padding: 2.8rem auto 3.2rem auto;
   border: solid 0.1rem #707070;
@@ -1534,16 +1534,16 @@ main .p-single-page__main .c-single-page__btn {
 }
 
 @media (min-width: 641px) {
-  main .p-single-page__main .c-single-page__btn {
+  .l-main .p-single-page__main .c-single-page__btn {
     width: 42.9rem;
   }
 }
 
-main .p-single-page__main .c-under__btn__txt {
+.l-main .p-single-page__main .c-under__btn__txt {
   padding-bottom: 7.1rem;
 }
 
-main .l-page-hero {
+.l-main .l-page-hero {
   background-image: url(/images/page_hero_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1558,12 +1558,12 @@ main .l-page-hero {
 }
 
 @media (min-width: 641px) {
-  main .l-page-hero {
+  .l-main .l-page-hero {
     height: 50rem;
   }
 }
 
-footer {
+.l-footer {
   overflow: hidden;
   color: #fff;
   max-width: 100%;
@@ -1581,7 +1581,7 @@ footer {
 }
 
 @media (min-width: 769px) {
-  footer {
+  .l-footer {
     width: 100%;
     float: left;
     z-index: 1000;
@@ -1589,25 +1589,25 @@ footer {
   }
 }
 
-footer h2 {
+.l-footer h2 {
   margin: 0 auto;
   font-size: 2rem;
   text-align: center;
   padding-top: 3.9rem;
 }
 
-footer p {
+.l-footer p {
   margin: 0 auto;
   font-size: 1.4rem;
   text-align: center;
   padding-top: 3.5rem;
 }
 
-sidebar {
+.l-sidebar {
   /*JSでsidebar開いた状態を作る*/
 }
 
-sidebar .p-sidebar_wrapper {
+.l-sidebar .p-sidebar__wrapper {
   color: #707070;
   background-color: #fff7ef;
   width: 32.8rem;
@@ -1627,7 +1627,7 @@ sidebar .p-sidebar_wrapper {
 }
 
 @media (min-width: 769px) {
-  sidebar .p-sidebar_wrapper {
+  .l-sidebar .p-sidebar__wrapper {
     width: 19.3%;
     float: right;
     right: 0rem;
@@ -1636,7 +1636,7 @@ sidebar .p-sidebar_wrapper {
   }
 }
 
-sidebar .p-sidebar_wrapper .c-sidebar_title {
+.l-sidebar .p-sidebar__wrapper .c-sidebar__title {
   display: none;
   /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1646,16 +1646,16 @@ sidebar .p-sidebar_wrapper .c-sidebar_title {
 }
 
 @media (min-width: 769px) {
-  sidebar .p-sidebar_wrapper .c-sidebar_title {
+  .l-sidebar .p-sidebar__wrapper .c-sidebar__title {
     display: block;
   }
 }
 
-sidebar .p-sidebar_wrapper .c-sidebar_title.is-open {
+.l-sidebar .p-sidebar__wrapper .c-sidebar__title.is-open {
   display: none;
 }
 
-sidebar .p-sidebar_wrapper .c-menu_cancel_btn {
+.l-sidebar .p-sidebar__wrapper .c-menu__cancel__btn {
   float: left;
   position: relative;
   top: 2.5rem;
@@ -1671,20 +1671,20 @@ sidebar .p-sidebar_wrapper .c-menu_cancel_btn {
 }
 
 @media (min-width: 769px) {
-  sidebar .p-sidebar_wrapper .c-menu_cancel_btn {
+  .l-sidebar .p-sidebar__wrapper .c-menu__cancel__btn {
     display: none;
   }
 }
 
-sidebar .p-sidebar_wrapper .is-open {
+.l-sidebar .p-sidebar__wrapper .is-open {
   display: block;
 }
 
-sidebar .p-sidebar_wrapper .c-menu_list {
+.l-sidebar .p-sidebar__wrapper .c-menu__list {
   padding-top: 21.2rem;
 }
 
-sidebar .p-sidebar_wrapper h2 {
+.l-sidebar .p-sidebar__wrapper h2 {
   font-family: Roboto;
   font-size: 3.4rem;
   position: relative;
@@ -1693,7 +1693,7 @@ sidebar .p-sidebar_wrapper h2 {
   margin-bottom: 8.5rem;
 }
 
-sidebar .p-sidebar_wrapper h3 {
+.l-sidebar .p-sidebar__wrapper h3 {
   font-family: "mplus-1m-bold";
   font-size: 2.4rem;
   margin-bottom: 4.2rem;
@@ -1701,7 +1701,7 @@ sidebar .p-sidebar_wrapper h3 {
   left: 4.6rem;
 }
 
-sidebar .p-sidebar_wrapper p {
+.l-sidebar .p-sidebar__wrapper p {
   font-family: "M+ 1m";
   font-size: 2rem;
   line-height: 4.7rem;
@@ -1709,13 +1709,13 @@ sidebar .p-sidebar_wrapper p {
   left: 6.6rem;
 }
 
-sidebar .p-sidebar_wrapper .c-burger,
-sidebar .p-sidebar_wrapper .c-side,
-sidebar .p-sidebar_wrapper .c-drink {
+.l-sidebar .p-sidebar__wrapper .c-burger__menu,
+.l-sidebar .p-sidebar__wrapper .c-side__menu,
+.l-sidebar .p-sidebar__wrapper .c-drink__menu {
   margin-bottom: 4rem;
 }
 
-sidebar .is-open {
+.l-sidebar .is-open {
   overflow: scroll;
   /*JSでsidebar開いたときにsidebarだけスクロールさせる*/
   height: 100vh;
@@ -1733,7 +1733,7 @@ sidebar .is-open {
 }
 
 @media (min-width: 641px) {
-  sidebar .is-open {
+  .l-sidebar .is-open {
     width: 50%;
     /*@if $point == wide {
         @media ( min-width: 961px ) {
@@ -1744,23 +1744,19 @@ sidebar .is-open {
 }
 
 @media (min-width: 641px) and (min-width: 769px) {
-  sidebar .is-open {
+  .l-sidebar .is-open {
     display: block;
   }
 }
 
-.pageContainer {
+.u-body__wrrapper {
   position: relative;
   min-height: 100%;
   overflow: hidden;
 }
 
-.document-wrapper {
-  overflow: hidden;
-}
-
 /*jQueryサイドバー表示の黒透過*/
-.c-open_menu-wrapper {
+.u-open__menu__wrapper {
   position: fixed;
   top: 0;
   right: 0;

@@ -1,5 +1,5 @@
-sidebar {
-    .p-sidebar_wrapper {
+.l-sidebar {
+    .p-sidebar__wrapper {
         color: #707070;
         background-color: #fff7ef;
         width: 32.8rem;
@@ -17,18 +17,18 @@ sidebar {
             display: block;
         }
 
-        .c-sidebar_title {
+        .c-sidebar__title {
             display: none;
             @include breakpoint(pc) {
                 display: block;
             }
         }
         /*JSでsidebar開いた状態*/
-        .c-sidebar_title.is-open {
+        .c-sidebar__title.is-open {
             display: none;
         }
 
-        .c-menu_cancel_btn {
+        .c-menu__cancel__btn {
             float: left;
             position: relative;
             top: 2.5rem;
@@ -45,7 +45,7 @@ sidebar {
             display: block;
         }
 
-        .c-menu_list {
+        .c-menu__list {
             padding-top: 21.2rem;
         }
         h2 {
@@ -72,17 +72,18 @@ sidebar {
             position: relative;
             left: 6.6rem;
         }
-        .c-burger,
-        .c-side,
-        .c-drink {
+        .c-burger__menu,
+        .c-side__menu,
+        .c-drink__menu {
             margin-bottom: 4rem;
         }
     }
+
     /*JSでsidebar開いた状態を作る*/
     .is-open {
-        overflow: scroll;/*JSでsidebar開いたときにsidebarだけスクロールさせる*/
-        height: 100vh;/*overflowを機能させるためにブラウザの高さいっぱいを指定*/
-        -webkit-overflow-scrolling: touch;/*慣性スクロールが効くのでスムーズとなる？*/
+        overflow: scroll; /*JSでsidebar開いたときにsidebarだけスクロールさせる*/
+        height: 100vh; /*overflowを機能させるためにブラウザの高さいっぱいを指定*/
+        -webkit-overflow-scrolling: touch; /*慣性スクロールが効くのでスムーズとなる？*/
         right: 0rem;
         position: absolute;
         /*JSでsidebar開いた状態をレスポンシブ対応*/
@@ -94,3 +95,4 @@ sidebar {
         }
     }
 }
+

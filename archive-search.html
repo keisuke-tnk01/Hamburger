@@ -19,213 +19,212 @@
 </head>
 
 <body>
-    <div class="pageContainer">
+    <div class="u-body__wrrapper">
         <!--全画面右余白削除用-->
-        <div class="document-wrapper">
-            <!--sidebar高さリサイズ用-->
-            <sidebar>
-                <div id="js-sidebar_wrapper" class="p-sidebar_wrapper">
-                    <img src="images/menu_cancel_btn.png" class="c-menu_cancel_btn" id="js-close_menu">
-                    <h2 class="c-sidebar_title" id="js-sidebar_title">Menu</h2>
-                    <div class="c-menu_list">
-                        <div class="c-burger">
-                            <h3>バーガー</h3>
-                            <p>ハンバーガー</p>
-                            <p>チーズバーガー</p>
-                            <p>テリヤキバーガー</p>
-                            <p>アボカドバーガー</p>
-                            <p>フィッシュバーガー</p>
-                            <p>ベーコンバーガー</p>
-                            <p>チキンバーガー</p>
-                        </div>
-                        <div class="c-side">
-                            <h3>サイド</h3>
-                            <p>ポテト</p>
-                            <p>サラダ</p>
-                            <p>ナゲット</p>
-                            <p>コーン</p>
-                        </div>
-                        <div class="c-drink">
-                            <h3>ドリンク</h3>
-                            <p>コーラ</p>
-                            <p>ファンタ</p>
-                            <p>オレンジ</p>
-                            <p>アップル</p>
-                            <p>紅茶（Ice/Hot）</p>
-                            <p>コーヒー（Ice/Hot）</p>
-                        </div>
+
+        <sidebar class="l-sidebar">
+            <div class="p-sidebar__wrapper">
+                <img src="images/menu_cancel_btn.png" class="c-menu__cancel__btn" id="js-close__menu">
+                <h2 class="c-sidebar__title">Menu</h2>
+                <div class="c-menu__list">
+                    <div class="c-burger__menu">
+                        <h3>バーガー</h3>
+                        <p>ハンバーガー</p>
+                        <p>チーズバーガー</p>
+                        <p>テリヤキバーガー</p>
+                        <p>アボカドバーガー</p>
+                        <p>フィッシュバーガー</p>
+                        <p>ベーコンバーガー</p>
+                        <p>チキンバーガー</p>
+                    </div>
+                    <div class="c-side__menu">
+                        <h3>サイド</h3>
+                        <p>ポテト</p>
+                        <p>サラダ</p>
+                        <p>ナゲット</p>
+                        <p>コーン</p>
+                    </div>
+                    <div class="c-drink__menu">
+                        <h3>ドリンク</h3>
+                        <p>コーラ</p>
+                        <p>ファンタ</p>
+                        <p>オレンジ</p>
+                        <p>アップル</p>
+                        <p>紅茶（Ice/Hot）</p>
+                        <p>コーヒー（Ice/Hot）</p>
                     </div>
                 </div>
-            </sidebar>
+            </div>
+        </sidebar>
 
-            <div class="c-open_menu-wrapper"></div>
+        <div class="u-open__menu__wrapper"></div>
 
-            <header>
-                <div id="js-open_menu" class="c-menu">
-                    <p>Menu</p>
+        <header class="l-header">
+            <div id="js-open__menu" class="c-header__menu">
+                <p>Menu</p>
+            </div>
+            <p class="c-site__title">Hamburger</p>
+            <form role="search" method="get" id="searchform" class="p-search__form">
+                <div>
+                    <input type="text" class="c-search__text" placeholder="&#xf002;">
+                    <label>
+                        <input type="submit" class="c-search__submit" value="検索">
+                    </label>
                 </div>
-                <p class="c-site_title">Hamburger</p>
-                <form role="search" method="get" id="searchform" class="p-search__form">
-                    <div>
-                        <input type="text" class="c-search__text" placeholder="&#xf002;">
-                        <label>
-                            <input type="submit" class="c-search__submit" value="検索">
-                        </label>
+            </form>
+        </header>
+
+        <main class="l-main">
+
+            <div class="p-archive__hero">
+                <h2 class="c-archive__main__title">Search:</h2>
+                <h3 class="c-archive__main__menu">チーズバーガー</h3>
+            </div>
+            <div class="p-archive__main">
+                <div class="p-archive__container">
+                    <h3>小見出しが入ります</h3>
+                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                </div>
+
+                <section class="p-card__wrapper">
+                    <div class="c-card__container">
+                        <img class="c-card__imgframe">
+                        <div class="p-card__contents">
+                            <h2 class="c-card__title">見出しが入ります</h2>
+                            <div class="c-card__text">
+                                <h3>小見出しが入ります</h3>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                            <label class="c-card__btn">
+                                <input type="submit" class="c-search__submit" value="詳しく見る">
+                            </label>
+                        </div>
                     </div>
-                </form>
-            </header>
-
-            <main>
-
-                <div class="l-archive-top">
-                    <h2 class="l-archive-main_title">Search:</h2>
-                    <h3 class="l-archive-main_menu">チーズバーガー</h3>
-                </div>
-                <div class="l-archive_main">
-                    <div class="l-archive-container">
-                        <h3>小見出しが入ります</h3>
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                        </p>
+                    <div class="c-card__container">
+                        <img class="c-card__imgframe">
+                        <div class="p-card__contents">
+                            <h2 class="c-card__title">見出しが入ります</h2>
+                            <div class="c-card__text">
+                                <h3>小見出しが入ります</h3>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            </div>
+                            <label class="c-card__btn">
+                                <input type="submit" class="c-search__submit" value="詳しく見る">
+                            </label>
+                        </div>
                     </div>
-
-                    <section class="l-card-wrapper">
-                        <div class="l-archive_card">
-                            <img class="l-card_imageframe">
-                            <div class="l-card_contents">
-                                <h2 class="l-card_title">見出しが入ります</h2>
-                                <div class="l-card_text">
-                                    <h3>小見出しが入ります</h3>
-                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                </div>
-                                <label class="l-card_btn">
-                                    <input type="submit" class="c-search__submit" value="詳しく見る">
-                                </label>
+                    <div class="c-card__container">
+                        <img class="c-card__imgframe">
+                        <div class="p-card__contents">
+                            <h2 class="c-card__title">見出しが入ります</h2>
+                            <div class="c-card__text">
+                                <h3>小見出しが入ります</h3>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                             </div>
+                            <label class="c-card__btn">
+                                <input type="submit" class="c-search__submit" value="詳しく見る">
+                            </label>
                         </div>
-                        <div class="l-archive_card">
-                            <img class="l-card_imageframe">
-                            <div class="l-card_contents">
-                                <h2 class="l-card_title">見出しが入ります</h2>
-                                <div class="l-card_text">
-                                    <h3>小見出しが入ります</h3>
-                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                </div>
-                                <label class="l-card_btn">
-                                    <input type="submit" class="c-search__submit" value="詳しく見る">
-                                </label>
+                    </div>
+                    <div class="c-card__container">
+                        <img class="c-card__imgframe">
+                        <div class="p-card__contents">
+                            <h2 class="c-card__title">見出しが入ります</h2>
+                            <div class="c-card__text">
+                                <h3>小見出しが入ります</h3>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                             </div>
+                            <label class="c-card__btn">
+                                <input type="submit" class="c-search__submit" value="詳しく見る">
+                            </label>
                         </div>
-                        <div class="l-archive_card">
-                            <img class="l-card_imageframe">
-                            <div class="l-card_contents">
-                                <h2 class="l-card_title">見出しが入ります</h2>
-                                <div class="l-card_text">
-                                    <h3>小見出しが入ります</h3>
-                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                </div>
-                                <label class="l-card_btn">
-                                    <input type="submit" class="c-search__submit" value="詳しく見る">
-                                </label>
+                    </div>
+                    <div class="c-card__container">
+                        <img class="c-card__imgframe">
+                        <div class="p-card__contents">
+                            <h2 class="c-card__title">見出しが入ります</h2>
+                            <div class="c-card__text">
+                                <h3>小見出しが入ります</h3>
+                                <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                             </div>
+                            <label class="c-card__btn">
+                                <input type="submit" class="c-search__submit" value="詳しく見る">
+                            </label>
                         </div>
-                        <div class="l-archive_card">
-                            <img class="l-card_imageframe">
-                            <div class="l-card_contents">
-                                <h2 class="l-card_title">見出しが入ります</h2>
-                                <div class="l-card_text">
-                                    <h3>小見出しが入ります</h3>
-                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                </div>
-                                <label class="l-card_btn">
-                                    <input type="submit" class="c-search__submit" value="詳しく見る">
-                                </label>
+                    </div>
+                </section>
+
+                <section class="p-pagenation">
+                    <p class="c-page__view">page 1/10</p>
+                    <div class="c-page__previous">
+                        <img src="/images/archive_page_previous.png" class="c-page__logo">
+                        <button type="button" class="c-page__word">前へ</button>
+                    </div>
+                    <div class="c-page__container">
+                        <a href="#">
+                            <div class="c-page_number">
+                                <p>1</p>
                             </div>
-                        </div>
-                        <div class="l-archive_card">
-                            <img class="l-card_imageframe">
-                            <div class="l-card_contents">
-                                <h2 class="l-card_title">見出しが入ります</h2>
-                                <div class="l-card_text">
-                                    <h3>小見出しが入ります</h3>
-                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                </div>
-                                <label class="l-card_btn">
-                                    <input type="submit" class="c-search__submit" value="詳しく見る">
-                                </label>
+                        </a>
+                        <a href="#">
+                            <div class="c-page_number">
+                                <p>2</p>
                             </div>
-                        </div>
-                    </section>
+                        </a>
+                        <a href="#">
+                            <div class="c-page_number">
+                                <p>3</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="c-page_number">
+                                <p>4</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="c-page_number">
+                                <p>5</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="c-page_number">
+                                <p>6</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="c-page_number">
+                                <p>7</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="c-page_number">
+                                <p>8</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="c-page_number">
+                                <p>9</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="l-page_next">
+                        <button type="button" class="c-page__word">次へ</button>
+                        <img src="/images/archive_page_next.png" class="c-page__logo">
+                    </div>
+                </section>
+            </div>
+        </main>
 
-                    <section class="l-pagenation">
-                        <p class="l-page_view">page 1/10</p>
-                        <div class="l-page_previous">
-                            <img src="/images/archive_page_previous.png" class="l-page_logo">
-                            <button type="button" class="l-page_comment">前へ</button>
-                        </div>
-                        <div class="l-page_container">
-                            <a href="#">
-                                <div class="l-page_number">
-                                    <p>1</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="l-page_number">
-                                    <p>2</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="l-page_number">
-                                    <p>3</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="l-page_number">
-                                    <p>4</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="l-page_number">
-                                    <p>5</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="l-page_number">
-                                    <p>6</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="l-page_number">
-                                    <p>7</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="l-page_number">
-                                    <p>8</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="l-page_number">
-                                    <p>9</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="l-page_next">
-                            <button type="button" class="l-page_comment">次へ</button>
-                            <img src="/images/archive_page_next.png" class="l-page_logo">
-                        </div>
-                    </section>
-                </div>
-            </main>
+        <footer class="l-footer">
+            <h2>ショップ情報|ヒストリー</h2>
+            <p>Copyright : RaiseTech</p>
 
-            <footer>
-                <h2>ショップ情報|ヒストリー</h2>
-                <p>Copyright : RaiseTech</p>
+        </footer>
 
-            </footer>
+    </div>
 
-        </div>
-
-        <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

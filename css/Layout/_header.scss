@@ -1,4 +1,4 @@
-header {
+.l-header {
     overflow: hidden;
     height: 217px;
     background-color: #fff7ef;
@@ -11,7 +11,7 @@ header {
         float: left;
     }
 
-    .c-menu {
+    .c-header__menu {
         float: right;
         font-size: 2rem;
         margin: 1.4rem 1.6rem 0 0;
@@ -22,7 +22,7 @@ header {
         }
     }
 
-    .c-site_title {
+    .c-site__title {
         font-size: 4rem;
         text-align: center;
         padding-top: 4rem;
