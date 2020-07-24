@@ -1589,14 +1589,14 @@ body {
   }
 }
 
-.l-footer h2 {
+.l-footer .p-shop__info {
   margin: 0 auto;
   font-size: 2rem;
   text-align: center;
   padding-top: 3.9rem;
 }
 
-.l-footer p {
+.l-footer .p-copyright {
   margin: 0 auto;
   font-size: 1.4rem;
   text-align: center;
@@ -1733,6 +1733,7 @@ body {
         }*/
 }
 
+/*全画面右余白削除,sidebar高さをfooterまで埋める調整用*/
 .u-body__wrrapper {
   position: relative;
   min-height: 100%;

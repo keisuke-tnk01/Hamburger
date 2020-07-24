@@ -23,6 +23,7 @@
 @import "layout/_footer.scss";
 @import "layout/_sidebar.scss";
 
+/*全画面右余白削除,sidebar高さをfooterまで埋める調整用*/
 .u-body__wrrapper {
   position: relative;
   min-height: 100%;
