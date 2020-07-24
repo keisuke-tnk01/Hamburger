@@ -17,7 +17,7 @@
 /*@import "setting/**";
 @import "function/**";
 @import "component/**";
-@import "project/**";
+
 @import "utility/**";*/
 /*!
  * ress.css • v2.0.4
@@ -1589,20 +1589,6 @@ body {
   }
 }
 
-.l-footer .p-shop__info {
-  margin: 0 auto;
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 3.9rem;
-}
-
-.l-footer .p-copyright {
-  margin: 0 auto;
-  font-size: 1.4rem;
-  text-align: center;
-  padding-top: 3.5rem;
-}
-
 .l-sidebar {
   /*JSでsidebar開いた状態を作る*/
 }
@@ -1731,6 +1717,21 @@ body {
                 display: block;
             }
         }*/
+}
+
+/*footer*/
+.p-shop__info {
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 3.9rem;
+}
+
+.p-copyright {
+  margin: 0 auto;
+  font-size: 1.4rem;
+  text-align: center;
+  padding-top: 3.5rem;
 }
 
 /*全画面右余白削除,sidebar高さをfooterまで埋める調整用*/
