@@ -87,12 +87,12 @@
         right: 0rem;
         position: absolute;
         /*JSでsidebar開いた状態をレスポンシブ対応*/
-        @include breakpoint(tablet) {
+        /*@include breakpoint(tablet) {
             width: 50%;
             @include breakpoint(pc) {
                 display: block;
             }
-        }
+        }*/
     }
 }
 

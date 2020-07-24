@@ -118,7 +118,7 @@
         }
     }
 
-    .p-map {
+    .p-map__container {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/map_bg.jpg); /*map画像にカラーフィルター黒*/
         background-repeat: no-repeat;
         background-position: center center;
@@ -286,7 +286,7 @@
             padding-bottom: 2.5rem;
             font-size: 2rem;
         }
-        .c-card__text {
+        .c-card__txt {
             font-size: 1.6rem;
             h3 {
                 padding-bottom: 1.1rem;
@@ -572,8 +572,9 @@
             padding-left: 5rem;
             margin-bottom: 3rem;
         }
-        table,
-        td {
+        .c-single-page__table,
+        .c-td1,
+        .c-td2 {
             background-color: #ffffff;
             border: solid 0.1rem #707070;
             border-collapse: collapse;
@@ -606,7 +607,7 @@
         }
     }
     /*以下pageのcss*/
-    .l-page-hero {
+    .p-page-hero {
         background-image: url(/images/page_hero_bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
