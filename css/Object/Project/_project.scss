@@ -1,3 +1,18 @@
+/*header*/
+.p-search__form {
+    line-height: 4.6rem;
+    margin-top: 3.8rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    
+    @include breakpoint ( pc ) {
+        float :right;
+        display: inline-block;
+        margin-top: 8.6rem;
+        margin-right: 3rem;
+    }
+}
+
 
 /*footer*/
 .p-shop__info {

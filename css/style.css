@@ -15,10 +15,7 @@
 }
 
 /*@import "setting/**";
-@import "function/**";
-@import "component/**";
-
-@import "utility/**";*/
+@import "function/**";*/
 /*!
  * ress.css • v2.0.4
  * MIT License
@@ -387,131 +384,6 @@ body {
   .l-header {
     width: 80.7%;
     float: left;
-  }
-}
-
-.l-header .c-header__menu {
-  float: right;
-  font-size: 2rem;
-  margin: 1.4rem 1.6rem 0 0;
-  z-index: 500;
-  cursor: pointer;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-}
-
-@media (min-width: 769px) {
-  .l-header .c-header__menu {
-    display: none;
-  }
-}
-
-.l-header .c-site__title {
-  font-size: 4rem;
-  text-align: center;
-  padding-top: 4rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-}
-
-@media (min-width: 769px) {
-  .l-header .c-site__title {
-    margin-top: 5rem;
-    margin-left: 6.5rem;
-    display: inline-block;
-  }
-}
-
-.l-header .p-search__form {
-  line-height: 4.6rem;
-  margin-top: 3.8rem;
-  text-align: center;
-  margin-bottom: 4rem;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-}
-
-@media (min-width: 769px) {
-  .l-header .p-search__form {
-    float: right;
-    display: inline-block;
-    margin-top: 8.6rem;
-    margin-right: 3rem;
-  }
-}
-
-.l-header .c-search__text {
-  -webkit-appearance: none;
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: Fontawesome;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.4rem;
-  text-decoration: inherit;
-  padding: 1.1rem 1.6rem;
-  border-radius: 0.8rem;
-  border: 0.1rem solid #707070;
-  background-color: #fff;
-  height: 4.6rem;
-  width: 61.3%;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-}
-
-@media (min-width: 641px) {
-  .l-header .c-search__text {
-    width: 47.5%;
-  }
-}
-
-@media (min-width: 769px) {
-  .l-header .c-search__text {
-    width: 25.4vw;
-  }
-}
-
-.l-header label {
-  -webkit-appearance: none;
-  display: inline-block;
-  border-radius: 0.8rem;
-  margin-left: 1.2rem;
-  height: 4.6rem;
-  padding: 0 2.3rem 0 2.3rem;
-  font-size: 1.6rem;
-  color: #707070;
-  border: 0.1rem solid #707070;
-  background-color: #f2ede9;
-  vertical-align: top;
-  display: inline-block;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-}
-
-@media (min-width: 641px) {
-  .l-header label {
-    padding: 0 5.4rem 0 5.4rem;
   }
 }
 
@@ -1719,6 +1591,28 @@ body {
         }*/
 }
 
+/*header*/
+.p-search__form {
+  line-height: 4.6rem;
+  margin-top: 3.8rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 769px) {
+  .p-search__form {
+    float: right;
+    display: inline-block;
+    margin-top: 8.6rem;
+    margin-right: 3rem;
+  }
+}
+
 /*footer*/
 .p-shop__info {
   margin: 0 auto;
@@ -1732,6 +1626,111 @@ body {
   font-size: 1.4rem;
   text-align: center;
   padding-top: 3.5rem;
+}
+
+/*header*/
+.c-header__menu {
+  float: right;
+  font-size: 2rem;
+  margin: 1.4rem 1.6rem 0 0;
+  z-index: 500;
+  cursor: pointer;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 769px) {
+  .c-header__menu {
+    display: none;
+  }
+}
+
+.c-site__title {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 4rem;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 769px) {
+  .c-site__title {
+    margin-top: 5rem;
+    margin-left: 6.5rem;
+    display: inline-block;
+  }
+}
+
+.c-search__text {
+  -webkit-appearance: none;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Fontawesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  text-decoration: inherit;
+  padding: 1.1rem 1.6rem;
+  border-radius: 0.8rem;
+  border: 0.1rem solid #707070;
+  background-color: #fff;
+  height: 4.6rem;
+  width: 61.3%;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  .c-search__text {
+    width: 47.5%;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-search__text {
+    width: 25.4vw;
+  }
+}
+
+.c-search__submit {
+  -webkit-appearance: none;
+  display: inline-block;
+  border-radius: 0.8rem;
+  margin-left: 1.2rem;
+  height: 4.6rem;
+  padding: 0 2.3rem 0 2.3rem;
+  font-size: 1.6rem;
+  color: #707070;
+  border: 0.1rem solid #707070;
+  background-color: #f2ede9;
+  vertical-align: top;
+  display: inline-block;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  .c-search__submit {
+    padding: 0 5.4rem 0 5.4rem;
+  }
 }
 
 /*全画面右余白削除,sidebar高さをfooterまで埋める調整用*/
