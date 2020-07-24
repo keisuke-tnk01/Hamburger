@@ -430,11 +430,8 @@ body {
   }
 }
 
-.l-sidebar {
-  /*JSでsidebar開いた状態を作る*/
-}
-
-.l-sidebar .p-sidebar__wrapper {
+/*以下sidebarのproject*/
+.p-sidebar__wrapper {
   color: #707070;
   background-color: #fff7ef;
   width: 32.8rem;
@@ -449,12 +446,10 @@ body {
             @content ;
         }
     }*/
-  /*JSでsidebar開いた状態*/
-  /*JSでsidebar開いた状態でキャンセルボタン常時表示*/
 }
 
 @media (min-width: 769px) {
-  .l-sidebar .p-sidebar__wrapper {
+  .p-sidebar__wrapper {
     width: 19.3%;
     float: right;
     right: 0rem;
@@ -463,86 +458,8 @@ body {
   }
 }
 
-.l-sidebar .p-sidebar__wrapper .c-sidebar__title {
-  display: none;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-}
-
-@media (min-width: 769px) {
-  .l-sidebar .p-sidebar__wrapper .c-sidebar__title {
-    display: block;
-  }
-}
-
-.l-sidebar .p-sidebar__wrapper .c-sidebar__title.is-open {
-  display: none;
-}
-
-.l-sidebar .p-sidebar__wrapper .c-menu__cancel__btn {
-  float: left;
-  position: relative;
-  top: 2.5rem;
-  left: 27.9rem;
-  width: 3.2rem;
-  height: 3.2rem;
-  cursor: pointer;
-  /*@if $point == wide {
-        @media ( min-width: 961px ) {
-            @content ;
-        }
-    }*/
-}
-
-@media (min-width: 769px) {
-  .l-sidebar .p-sidebar__wrapper .c-menu__cancel__btn {
-    display: none;
-  }
-}
-
-.l-sidebar .p-sidebar__wrapper .is-open {
-  display: block;
-}
-
-.l-sidebar .p-sidebar__wrapper .c-menu__list {
-  padding-top: 21.2rem;
-}
-
-.l-sidebar .p-sidebar__wrapper h2 {
-  font-family: Roboto;
-  font-size: 3.4rem;
-  position: relative;
-  left: 4.6rem;
-  margin-top: 8.2rem;
-  margin-bottom: 8.5rem;
-}
-
-.l-sidebar .p-sidebar__wrapper h3 {
-  font-family: "mplus-1m-bold";
-  font-size: 2.4rem;
-  margin-bottom: 4.2rem;
-  position: relative;
-  left: 4.6rem;
-}
-
-.l-sidebar .p-sidebar__wrapper p {
-  font-family: "M+ 1m";
-  font-size: 2rem;
-  line-height: 4.7rem;
-  position: relative;
-  left: 6.6rem;
-}
-
-.l-sidebar .p-sidebar__wrapper .c-burger__menu,
-.l-sidebar .p-sidebar__wrapper .c-side__menu,
-.l-sidebar .p-sidebar__wrapper .c-drink__menu {
-  margin-bottom: 4rem;
-}
-
-.l-sidebar .is-open {
+/*JSでsidebar開いた状態を作る*/
+.p-sidebar__wrapper.is-open {
   overflow: scroll;
   /*JSでsidebar開いたときにsidebarだけスクロールさせる*/
   height: 100vh;
@@ -552,12 +469,28 @@ body {
   right: 0rem;
   position: absolute;
   /*JSでsidebar開いた状態をレスポンシブ対応*/
-  /*@include breakpoint(tablet) {
-            width: 50%;
-            @include breakpoint(pc) {
-                display: block;
-            }
-        }*/
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 641px) {
+  .p-sidebar__wrapper.is-open {
+    width: 50%;
+    /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+  }
+}
+
+@media (min-width: 641px) and (min-width: 769px) {
+  .p-sidebar__wrapper.is-open {
+    display: block;
+  }
 }
 
 /*以下headerのproject*/
@@ -988,6 +921,93 @@ body {
   font-size: 1.4rem;
   text-align: center;
   padding-top: 3.5rem;
+}
+
+/*以下sidebarのcomponent*/
+.c-sidebar__title {
+  display: none;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 769px) {
+  .c-sidebar__title {
+    display: block;
+    font-family: Roboto;
+    font-size: 3.4rem;
+    position: relative;
+    top: 8.2rem;
+    left: 4.6rem;
+  }
+}
+
+/*JSでsidebar開いた状態*/
+.c-sidebar__title.is-open {
+  display: none;
+}
+
+.c-menu__cancel__btn {
+  float: left;
+  position: relative;
+  top: 2.5rem;
+  left: 27.9rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  cursor: pointer;
+  /*@if $point == wide {
+        @media ( min-width: 961px ) {
+            @content ;
+        }
+    }*/
+}
+
+@media (min-width: 769px) {
+  .c-menu__cancel__btn {
+    display: none;
+  }
+}
+
+/*JSでsidebar開いた状態でキャンセルボタン常時表示*/
+.c-menu__cancel__btn.is-open {
+  display: block;
+}
+
+.c-menu__list {
+  padding-top: 21.2rem;
+}
+
+.c-menu__list h2 {
+  font-family: Roboto;
+  font-size: 3.4rem;
+  position: relative;
+  left: 4.6rem;
+  margin-top: 8.2rem;
+  margin-bottom: 8.5rem;
+}
+
+.c-menu__list h3 {
+  font-family: "mplus-1m-bold";
+  font-size: 2.4rem;
+  margin-bottom: 4.2rem;
+  position: relative;
+  left: 4.6rem;
+}
+
+.c-menu__list p {
+  font-family: "M+ 1m";
+  font-size: 2rem;
+  line-height: 4.7rem;
+  position: relative;
+  left: 6.6rem;
+}
+
+.c-burger__menu,
+.c-side__menu,
+.c-drink__menu {
+  margin-bottom: 4rem;
 }
 
 /*以下headerのcomponent*/

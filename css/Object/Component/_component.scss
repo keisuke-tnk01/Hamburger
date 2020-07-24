@@ -1,3 +1,73 @@
+/*以下sidebarのcomponent*/
+.c-sidebar__title {
+    display: none;
+    @include breakpoint(pc) {
+        display: block;
+        font-family: Roboto;
+        font-size: 3.4rem;
+        position: relative;
+        top: 8.2rem;
+        left:4.6rem;
+    }
+}
+/*JSでsidebar開いた状態*/
+.c-sidebar__title.is-open {
+    display: none;
+}
+
+
+.c-menu__cancel__btn {
+    float: left;
+    position: relative;
+    top: 2.5rem;
+    left: 27.9rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+    @include breakpoint(pc) {
+        display: none;
+    }
+}
+/*JSでsidebar開いた状態でキャンセルボタン常時表示*/
+.c-menu__cancel__btn.is-open {
+    display: block;
+}
+
+.c-menu__list {
+    padding-top: 21.2rem;
+
+    h2 {
+        font-family: Roboto;
+        font-size: 3.4rem;
+        position: relative;
+        left: 4.6rem;
+        margin-top: 8.2rem;
+        margin-bottom: 8.5rem;
+    }
+
+    h3 {
+        font-family: "mplus-1m-bold";
+        font-size: 2.4rem;
+        margin-bottom: 4.2rem;
+        position: relative;
+        left: 4.6rem;
+    }
+
+    p {
+        font-family: "M+ 1m";
+        font-size: 2rem;
+        line-height: 4.7rem;
+        position: relative;
+        left: 6.6rem;
+    }
+}
+
+.c-burger__menu,
+.c-side__menu,
+.c-drink__menu {
+    margin-bottom: 4rem;
+}
+
 /*以下headerのcomponent*/
 .c-header__menu {
     float: right;
@@ -264,7 +334,6 @@
     margin: 0.75rem;
 }
 
-
 /*以下single mainのcomponent*/
 .c-single__main__title {
     color: #fff;
@@ -290,6 +359,7 @@
         }
     }
 }
+
 .c-single-page__wide__imgframe {
     background-image: url(/images/single_img_wide.jpg);
     height: 12.4rem;
@@ -391,18 +461,21 @@
         }
     }
 }
+
 .c-single-page__list1 {
     margin: 3rem 0 6rem 2rem;
     @include breakpoint(tablet) {
         margin-top: 6rem;
     }
 }
+
 .c-single-page__list2 {
     margin: 3rem 0 6rem auto;
     .c-list__item {
         list-style-type: none;
     }
 }
+
 .c-list__item {
     margin-bottom: 3rem;
 }
@@ -457,4 +530,3 @@
 .c-under__btn__txt {
     padding-bottom: 7.1rem;
 }
-

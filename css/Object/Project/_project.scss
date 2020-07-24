@@ -1,3 +1,39 @@
+/*以下sidebarのproject*/
+.p-sidebar__wrapper {
+    color: #707070;
+    background-color: #fff7ef;
+    width: 32.8rem;
+    position: absolute;
+    z-index: 200;
+    right: -35rem;
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+    top: 0;
+    @include breakpoint(pc) {
+        width: 19.3%;
+        float: right;
+        right: 0rem;
+        position: absolute;
+        display: block;
+    }
+}
+/*JSでsidebar開いた状態を作る*/
+.p-sidebar__wrapper.is-open {
+    overflow: scroll; /*JSでsidebar開いたときにsidebarだけスクロールさせる*/
+    height: 100vh; /*overflowを機能させるためにブラウザの高さいっぱいを指定*/
+    -webkit-overflow-scrolling: touch; /*慣性スクロールが効くのでスムーズとなる？*/
+    right: 0rem;
+    position: absolute;
+    /*JSでsidebar開いた状態をレスポンシブ対応*/
+    @include breakpoint(tablet) {
+        width: 50%;
+        @include breakpoint(pc) {
+            display: block;
+        }
+    }
+}
+
+
 /*以下headerのproject*/
 .p-search__form {
     line-height: 4.6rem;
@@ -250,7 +286,6 @@
     color: #3c2a10;
 }
 
-
 /*以下page mainのproject*/
 .p-page-hero {
     background-image: url(/images/page_hero_bg.jpg);
@@ -264,7 +299,6 @@
     }
 }
 
-
 /*以下footerのproject*/
 .p-shop__info {
     margin: 0 auto;
@@ -272,10 +306,10 @@
     text-align: center;
     padding-top: 3.9rem;
 }
+
 .p-copyright {
     margin: 0 auto;
     font-size: 1.4rem;
     text-align: center;
     padding-top: 3.5rem;
 }
-
